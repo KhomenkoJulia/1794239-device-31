@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <header class="header-main">
+    <header class="header-main container">
       <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
           <nav class="nav-menu">
               <ul class="nav-action-list">
                   <li class="nav-action-item">
-                      <form class="search-form" action="#" method="get">
-                      <button class="search-button" type="submit">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.66666 12C7.84998 11.9998 8.9992 11.6036 9.93133 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6033 8.99978 11.9997 7.85029 12 6.66667C12 3.726 9.60733 1.33334 6.66666 1.33334C3.726 1.33334 1.33333 3.726 1.33333 6.66667C1.33333 9.60734 3.726 12 6.66666 12ZM6.66666 2.66667C8.87266 2.66667 10.6667 4.46067 10.6667 6.66667C10.6667 8.87267 8.87266 10.6667 6.66666 10.6667C4.46066 10.6667 2.66666 8.87267 2.66666 6.66667C2.66666 4.46067 4.46066 2.66667 6.66666 2.66667Z" fill="black"/>
-                      </svg>
-                      </button>
-                      <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
-                  </form>
+                        <form class="search-form" action="#" method="get">
+                            <label for="search-input">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66666 12C7.84998 11.9998 8.9992 11.6036 9.93133 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6033 8.99978 11.9997 7.85029 12 6.66667C12 3.726 9.60733 1.33334 6.66666 1.33334C3.726 1.33334 1.33333 3.726 1.33333 6.66667C1.33333 9.60734 3.726 12 6.66666 12ZM6.66666 2.66667C8.87266 2.66667 10.6667 4.46067 10.6667 6.66667C10.6667 8.87267 8.87266 10.6667 6.66666 10.6667C4.46066 10.6667 2.66666 8.87267 2.66666 6.66667C2.66666 4.46067 4.46066 2.66667 6.66666 2.66667Z" fill="black"/>
+                                </svg>
+                            </label>
+                            <input id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+                            <button class="search-button" type="submit">найти</button>
+                        </form>
                   </li>
                   <li class="nav-action-item">
                       <a class="nav-action-link" href="#">
@@ -54,12 +56,12 @@
                           <path d="M18.7 9.9V12.1H12.1V18.7H9.90002V12.1H3.30002V9.9H9.90002V3.3H12.1V9.9H18.7Z" fill="black" fill-opacity="0.3"/>
                           </svg>
                           <ul class="submenu">
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Виртуальная реальность</a></li>
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Фитнес-браслеты</a></li>
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Умные часы</a></li>
-                              <li class="submenu item"><a class="catalog-link" href="catalog.html">Квадрокоптер</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Виртуальная реальность</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Фитнес-браслеты</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Умные часы</a></li>
+                              <li class="submenu-item"><a class="catalog-link" href="catalog.html">Квадрокоптер</a></li>
                           </ul>
                   </li>
                   <li class="nav-item">
@@ -88,7 +90,7 @@
                   <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. 
                       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="#">подробнее</a>
+                      <a class="slider-details" href="catalog.html">подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link pagination-link-active" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="6" cy="6" r="5.5" stroke="black"/>
@@ -119,7 +121,7 @@
                   <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
                       не пропускать занятия и соблюдать диету.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="#">подробнее</a>
+                      <a class="slider-details" href="catalog.html">подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link" href="#"></a>
                       <a class="pagination-link pagination-link-active" href="#"></a>
@@ -142,7 +144,7 @@
                   <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
                       мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="#">подробнее</a>
+                      <a class="slider-details" href="catalog.html">подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link" href="#"></a>
                       <a class="pagination-link" href="#"></a>
@@ -160,42 +162,42 @@
              <h2 class="none">Категории товаров</h2>
               <ul class="chapter-list">
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-1.svg" alt="Виртуальная реальность">
                       <h3>Виртуальная реальность</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-2.svg" alt="Моноподы для селфи">
                       <h3>Моноподы для селфи</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-3.svg" alt="Экшн-камеры">
                       <h3>Экшн-камеры</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-4.svg" alt="Фитнес-браслеты">
                       <h3>Фитнес-браслеты</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-5.svg" alt="Умные часы">
                       <h3>Умные часы</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
-                  <a class="chapter-link" href="#">
+                  <a class="chapter-link" href="catalog.html">
                       <img src="img/popular-6.svg" alt="Квадрокоптеры">
                       <h3>Квадрокоптеры</h3>
                   </a>
@@ -204,12 +206,12 @@
           </section>
   
           <section class="advantages">
+            <div class="advantage-links">
+                <a class="advantage-link advantage-link-active" href="#">Доставка</a>
+                <a class="advantage-link" href="#">Гарантия</a>
+                <a class="advantage-link" href="#">Кредит</a>
+            </div>
               <div class="advantage advantage-delivery" id="delivery">
-                  <div class="advantage-links">
-                      <a class="advantage-link advantage-link-active" href="#">Доставка</a>
-                      <a class="advantage-link" href="#">Гарантия</a>
-                      <a class="advantage-link" href="#">Кредит</a>
-                  </div>
                   <h2>Доставка</h2>
                   <p class="advantage-text">Мы с удовольствием доставим ваш товар прямо к вашему 
                       подъезду совершенно бесплатно! Ведь мы неплохо 
@@ -217,11 +219,6 @@
               </div>
   
               <div class="advantage advantage-warranty" id="warranty">
-                  <div class="advantage-links">
-                      <a class="advantage-link" href="#">Доставка</a>
-                      <a class="advantage-link advantage-link-active" href="#">Гарантия</a>
-                      <a class="advantage-link" href="#">Кредит</a>
-                  </div>
                   <h2>Гарантия</h2>
                   <p class="advantage-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — 
                       не переживайте, мы выдадим вам новый.
@@ -229,11 +226,6 @@
               </div>
   
               <div class="advantage advantage-credit">
-                  <div class="advantage-links">
-                      <a class="advantage-link" href="#">Доставка</a>
-                      <a class="advantage-link" href="#">Гарантия</a>
-                      <a class="advantage-link advantage-link-active" href="#">Кредит</a>
-                  </div>
                   <h2>Кредит</h2>
                   <p class="advantage-text">Залезть в долговую яму стало проще! Кредитные консультанты 
                       подберут для вас наиболее выгодные 
@@ -268,10 +260,10 @@
                   <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
                       проверить работоспособность покупки. Всякое бывает.</p>
                       <!-- карта в модальном окне -->
-                  <a class="map-link" href="#">
+                  <a class="map-link" href="blank.html">
                       <img src="img/map.jpg" alt="Карта">
                   </a>
-                  <a class="info-form-link" href="#">напишите нам</a>
+                  <a class="info-form-link" href="blank.html">напишите нам</a>
               </div>
               <!-- форма в модальном окне -->
               <!-- <form action="#" method="post" class="letter-form">
