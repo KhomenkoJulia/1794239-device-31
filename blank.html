@@ -5,51 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ссылки в никуда</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
     <header class="header-main container">
-        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
             <nav class="nav-menu">
                 <ul class="nav-action-list">
                     <li class="nav-action-item">
                           <form class="search-form" action="#" method="get">
                               <label for="search-input">
-                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M6.66666 12C7.84998 11.9998 8.9992 11.6036 9.93133 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6033 8.99978 11.9997 7.85029 12 6.66667C12 3.726 9.60733 1.33334 6.66666 1.33334C3.726 1.33334 1.33333 3.726 1.33333 6.66667C1.33333 9.60734 3.726 12 6.66666 12ZM6.66666 2.66667C8.87266 2.66667 10.6667 4.46067 10.6667 6.66667C10.6667 8.87267 8.87266 10.6667 6.66666 10.6667C4.46066 10.6667 2.66666 8.87267 2.66666 6.66667C2.66666 4.46067 4.46066 2.66667 6.66666 2.66667Z" fill="black"/>
-                                  </svg>
+                                <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
                               </label>
                               <input id="search-input" type="text" name="search" placeholder="Поиск по сайту">
                               <button class="search-button" type="submit">найти</button>
                           </form>
                     </li>
                     <li class="nav-action-item">
-                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z" fill="black"/>
-                        </svg>
+                        <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">
                         <a class="profile-link" href="#">Валентин Петухов</a>
                         <a class="exit" href="#">Выйти</a>
                     </li>
                     <li class="nav-action-item">
                         <a class="nav-action-link" href="#">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.91669 5.36666H4.66669V11.0833H2.91669V5.36666ZM6.18335 2.91666H7.81669V11.0833H6.18335V2.91666ZM9.45002 7.58333H11.0834V11.0833H9.45002V7.58333Z" fill="black"/>
-                        </svg>
+                        <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14" height="14">
                         Сравнить</a>
                     </li>
                     <li class="nav-action-item">
                         <a class="nav-action-link" href="#">
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                        <path d="M9.86203 2.52171C9.79266 2.43992 9.69329 2.39317 9.58915 2.39317H7.65761V3.41881C7.65761 3.89009 7.25347 4.27351 6.75671 4.27351C6.25996 4.27351 5.85581 3.89009 5.85581 3.41881V2.39317H4.05401V3.41881C4.05401 3.89009 3.64987 4.27351 3.15311 4.27351C2.65635 4.27351 2.25221 3.89009 2.25221 3.41881V2.39317H0.320768C0.216534 2.39317 0.117164 2.43992 0.0477949 2.52171C-0.0216646 2.60351 -0.0545475 2.71257 -0.0426556 2.82146L0.605543 8.78462C0.617615 9.45692 1.14167 10 1.78419 10H8.12572C8.76815 10 9.29221 9.45693 9.30437 8.78453L9.95257 2.82137C9.96437 2.71257 9.93149 2.60351 9.86203 2.52171Z" fill="#231F20"/>
-                        <path d="M3.15309 3.76068C3.35182 3.76068 3.51345 3.60735 3.51345 3.4188V1.53846C3.51345 1.01051 4.07462 0.683761 4.59453 0.683761H5.49543C6.04264 0.683761 6.39633 1.01923 6.39633 1.53846V3.4188C6.39633 3.60735 6.55804 3.76068 6.75669 3.76068C6.95534 3.76068 7.11705 3.60735 7.11705 3.4188V1.53846C7.11705 0.647009 6.43507 0 5.49543 0H4.59453C3.60101 0 2.79272 0.690171 2.79272 1.53846V3.4188C2.79272 3.60735 2.95435 3.76068 3.15309 3.76068Z" fill="#231F20"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0">
-                        <rect width="10" height="10" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg> Корзина</a>
+                        <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">
+                        Корзина</a>
                     </li>
                 </ul>
                 <ul class="nav-list">
@@ -77,54 +66,44 @@
             <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="100" height="7" fill="white"/>
             </svg>
-       </header> 
-       <main></main>
-       <footer> 
+       </header>
+       
+       <main>
+           
+       </main>
+          
+           <footer> 
         <ul class="footer-action-menu">
             <li class="footer-action-item"><a class="footer-action-link" href="#">
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z" fill="black"/>
-                </svg> 
-                Войти</a></li>
+                <img src="img/icons/icon_user.svg" width="13" height="14">
+                Валентин Петухов Выйти</a></li>
             <li class="footer-action-item"><a class="footer-action-link" href="#">  
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.91669 5.36666H4.66669V11.0833H2.91669V5.36666ZM6.18335 2.91666H7.81669V11.0833H6.18335V2.91666ZM9.45002 7.58333H11.0834V11.0833H9.45002V7.58333Z" fill="black"/>
-                </svg> 
+                <img src="img/icons/icon_chart.svg" width="14" height="14"> 
                 Сравнить</a></li>
             <li class="footer-action-item"><a class="footer-action-link" href="#">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                <path d="M9.86203 2.52171C9.79266 2.43992 9.69329 2.39317 9.58915 2.39317H7.65761V3.41881C7.65761 3.89009 7.25347 4.27351 6.75671 4.27351C6.25996 4.27351 5.85581 3.89009 5.85581 3.41881V2.39317H4.05401V3.41881C4.05401 3.89009 3.64987 4.27351 3.15311 4.27351C2.65635 4.27351 2.25221 3.89009 2.25221 3.41881V2.39317H0.320768C0.216534 2.39317 0.117164 2.43992 0.0477949 2.52171C-0.0216646 2.60351 -0.0545475 2.71257 -0.0426556 2.82146L0.605543 8.78462C0.617615 9.45692 1.14167 10 1.78419 10H8.12572C8.76815 10 9.29221 9.45693 9.30437 8.78453L9.95257 2.82137C9.96437 2.71257 9.93149 2.60351 9.86203 2.52171Z" fill="#231F20"/>
-                <path d="M3.15309 3.76068C3.35182 3.76068 3.51345 3.60735 3.51345 3.4188V1.53846C3.51345 1.01051 4.07462 0.683761 4.59453 0.683761H5.49543C6.04264 0.683761 6.39633 1.01923 6.39633 1.53846V3.4188C6.39633 3.60735 6.55804 3.76068 6.75669 3.76068C6.95534 3.76068 7.11705 3.60735 7.11705 3.4188V1.53846C7.11705 0.647009 6.43507 0 5.49543 0H4.59453C3.60101 0 2.79272 0.690171 2.79272 1.53846V3.4188C2.79272 3.60735 2.95435 3.76068 3.15309 3.76068Z" fill="#231F20"/>
-                </g>
-                <defs>
-                <clipPath id="clip1">
-                <rect width="10" height="10" fill="white"/>
-                </clipPath>
-                </defs>
-                </svg> 
+                <img src="img/icons/icon_cart.svg" width="10" height="10">
                 Корзина</a></li>
         </ul>
-    <section class="footer-content"> 
-        <h2 class="none">Контакты</h2>    
+    <section class="footer-content">  
+        <h2 class="none">Контакты</h2>   
     <div class="footer-left">
-        <a class="logo-link footer-logo" href="#"><img class="logo logo-footer" src="img/logo.svg" alt="logo"></a>
-        <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+    <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип магазина Девайс"></a>
+        <p class="footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     </div>
     <div class="footer-center">
         <ul class="footer-nav-list">
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#delivery">доставка</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#warranty">гарантия</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#delivery">доставка</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#warranty">гарантия</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#contacts">контакты</a></li>
         </ul>
         <ul class="social">
-            <li class="social-item"><a class="social-link" href="#"><img src="img/face.svg" alt="facebook"></a></li>
-            <li class="social-item"><a class="social-link" href="#"><img src="img/icon_instagram.svg" alt="instagram"></a></li>
-            <li class="social-item"><a class="social-link" href="#"><img src="img/icon_witter.svg" alt="twitter"></a></li>
+            <li class="social-item"><a class="social-link" href="#"><img src="img/social/facebook.svg" width="32" height="32" alt="facebook"></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/social/insta.svg" width="32" height="32" alt="instagram"></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/social/twit.svg" width="32" height="32" alt="twitter"></a></li>
         </ul>
     </div>
     <div class="footer-right">
-        <p class="footer-text">Тел.: <a class="tel-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+        <p class="footer-text">Тел.: +7 800 555-86-28</p>
         <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="education-logo" src="img/logo_htmlacademy.svg" alt="html academy"></a>
     </div>
     </section>  

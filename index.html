@@ -3,56 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
 
-    <header class="header-main container">
-      <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
-          <nav class="nav-menu">
-              <ul class="nav-action-list">
-                  <li class="nav-action-item">
+    <header class="header-main">
+     <div class="container">
+      <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+          <nav class="nav-menu"><div class="nav-menu-top">
                         <form class="search-form" action="#" method="get">
                             <label for="search-input">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66666 12C7.84998 11.9998 8.9992 11.6036 9.93133 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6033 8.99978 11.9997 7.85029 12 6.66667C12 3.726 9.60733 1.33334 6.66666 1.33334C3.726 1.33334 1.33333 3.726 1.33333 6.66667C1.33333 9.60734 3.726 12 6.66666 12ZM6.66666 2.66667C8.87266 2.66667 10.6667 4.46067 10.6667 6.66667C10.6667 8.87267 8.87266 10.6667 6.66666 10.6667C4.46066 10.6667 2.66666 8.87267 2.66666 6.66667C2.66666 4.46067 4.46066 2.66667 6.66666 2.66667Z" fill="black"/>
-                                </svg>
+                                <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
                             </label>
                             <input id="search-input" type="text" name="search" placeholder="Поиск по сайту">
                             <button class="search-button" type="submit">найти</button>
+                              <svg class="search-line" width="440" height="2" viewBox="0 0 440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="1" x2="440" y2="1" stroke="black" stroke-width="2"/>
+                                </svg>
                         </form>
+                  <ul class="nav-action-list">
+                  <li class="nav-action-item">
+                      <a class="nav-action-link" href="#">
+                      <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">Войти</a>
                   </li>
                   <li class="nav-action-item">
                       <a class="nav-action-link" href="#">
-                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z" fill="black"/>
-                      </svg>Войти</a>
+                      <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14" height="14">Сравнить</a>
                   </li>
                   <li class="nav-action-item">
                       <a class="nav-action-link" href="#">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.91669 5.36666H4.66669V11.0833H2.91669V5.36666ZM6.18335 2.91666H7.81669V11.0833H6.18335V2.91666ZM9.45002 7.58333H11.0834V11.0833H9.45002V7.58333Z" fill="black"/>
-                      </svg>
-                      Сравнить</a>
+                      <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">Корзина</a>
                   </li>
-                  <li class="nav-action-item">
-                      <a class="nav-action-link" href="#">
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0)">
-                      <path d="M9.86203 2.52171C9.79266 2.43992 9.69329 2.39317 9.58915 2.39317H7.65761V3.41881C7.65761 3.89009 7.25347 4.27351 6.75671 4.27351C6.25996 4.27351 5.85581 3.89009 5.85581 3.41881V2.39317H4.05401V3.41881C4.05401 3.89009 3.64987 4.27351 3.15311 4.27351C2.65635 4.27351 2.25221 3.89009 2.25221 3.41881V2.39317H0.320768C0.216534 2.39317 0.117164 2.43992 0.0477949 2.52171C-0.0216646 2.60351 -0.0545475 2.71257 -0.0426556 2.82146L0.605543 8.78462C0.617615 9.45692 1.14167 10 1.78419 10H8.12572C8.76815 10 9.29221 9.45693 9.30437 8.78453L9.95257 2.82137C9.96437 2.71257 9.93149 2.60351 9.86203 2.52171Z" fill="#231F20"/>
-                      <path d="M3.15309 3.76068C3.35182 3.76068 3.51345 3.60735 3.51345 3.4188V1.53846C3.51345 1.01051 4.07462 0.683761 4.59453 0.683761H5.49543C6.04264 0.683761 6.39633 1.01923 6.39633 1.53846V3.4188C6.39633 3.60735 6.55804 3.76068 6.75669 3.76068C6.95534 3.76068 7.11705 3.60735 7.11705 3.4188V1.53846C7.11705 0.647009 6.43507 0 5.49543 0H4.59453C3.60101 0 2.79272 0.690171 2.79272 1.53846V3.4188C2.79272 3.60735 2.95435 3.76068 3.15309 3.76068Z" fill="#231F20"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0">
-                      <rect width="10" height="10" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg> Корзина</a>
-                  </li>
-              </ul>
-              <ul class="nav-list">
-                  <li class="nav-item">
-                      каталог товаров <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </ul></div>
+              
+                 <div class="nav-bottom">
+                  <div class="top-menu">
+                      <a class="nav-link" href="catalog.html">каталог товаров</a> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M18.7 9.9V12.1H12.1V18.7H9.90002V12.1H3.30002V9.9H9.90002V3.3H12.1V9.9H18.7Z" fill="black" fill-opacity="0.3"/>
                           </svg>
                           <ul class="submenu">
@@ -62,143 +52,192 @@
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Фитнес-браслеты</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Умные часы</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Квадрокоптер</a></li>
-                          </ul>
-                  </li>
+                          </ul></div>
+              <ul class="nav-list">
                   <li class="nav-item">
                       <a class="nav-link" href="#delivery">доставка</a></li>
                   <li class="nav-item">
                       <a class="nav-link" href="#warranty">гарантия</a></li>
                   <li class="nav-item">
                       <a class="nav-link" href="#contacts">контакты</a></li>
-              </ul>
+              </ul></div>
           </nav>
-          <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100" height="7" fill="white"/>
-          </svg>
+      </div>
      </header> 
      <main>
          <h1 class="none">Магазин Device</h1>
-          <section class="slider">
+         
+         
+          <section class="slider container">
               <h2 class="none">Хиты продаж!</h2>
-              <div class="slide">
-                  <div class="slide-right">
-                      <img class="slide-img" src="img/slider-1.png" alt="Палка для селфи">
-                  </div>
+              <div class="slider-inner">
+              <div class="slider-slides">
+              <div id="slide1" class="slide">
                   <div class="slide-left">
-                  <div class="slider-number">01</div>
-                  <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
-                  <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. 
+                      <img class="slide-img" src="img/slider/slider-1.png" alt="Палка для селфи" width="384" height="486">
+                  </div>
+                  <div class="slide-right">
+                  <div class="slider-number"><svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100" height="7" fill="white"/>
+                  </svg>
+                      <p class="number-text">01</p></div>
+                  <h3 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h3>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине. 
                       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">подробнее</a>
+                      <a class="slider-details" href="catalog.html">
+                       <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="220" height="8" fill="#F0C52E"/>
+                        </svg>подробнее</a>
                       <div class="pagination">
-                      <a class="pagination-link pagination-link-active" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <a class="pagination-link pagination-link1" href="#slide1">
+                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="6" cy="6" r="5.5" stroke="black"/>
                           </svg></a>
-                      <a class="pagination-link" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <a class="pagination-link pagination-link2" href="#slide2">
+                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="6" cy="6" r="5.5" stroke="black"/>
                           </svg></a>
-                      <a class="pagination-link" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <a class="pagination-link pagination-link3" href="#slide3">
+                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="6" cy="6" r="5.5" stroke="black"/>
                           </svg></a>
                       </div>
                   </div>
                   <div class="properties">
-                      <p class="slider-text"><span class="property">8,5 м </span>Длина палки</p>
-                      <p class="slider-text"><span class="property">5 кг </span>Вес палки</p>
-                      <p class="slider-text"><span class="property">Карбон </span>Материал</p>
+                      <p class="slider-text"><span class="property">8,5 м </span><br>Длина палки</p>
+                      <p class="slider-text"><span class="property">5 кг </span><br>Вес палки</p>
+                      <p class="slider-text"><span class="property">Карбон </span><br>Материал</p>
                   </div>
                   </div>
               </div>
   
-              <div class="slide">
+              <div id="slide2" class="slide">
                   <div class="slide-left">
-                      <img class="slide-img" src="img/slider-2.png" alt="Фитнес-браслет">
+                      <img class="slide-img" src="img/slider/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
                   </div>
                   <div class="slide-right">
-                  <div class="slider-number">02</div>
+                  <div class="slider-number">
+                  <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100" height="7" fill="white"/>
+                  </svg>
+                    <p class="number-text">02</p></div>
                   <h3 class="slider-title">Худеем правильно!</h3>
-                  <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
+                  <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  
                       не пропускать занятия и соблюдать диету.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">подробнее</a>
+                      <a class="slider-details" href="catalog.html">
+                      <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="220" height="8" fill="#F0C52E"/>
+                        </svg>подробнее</a>
                       <div class="pagination">
-                      <a class="pagination-link" href="#"></a>
-                      <a class="pagination-link pagination-link-active" href="#"></a>
-                      <a class="pagination-link" href="#"></a>
+                      <a class="pagination-link pagination-link1" href="#slide1">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                            </svg>
+                      </a>
+                      <a class="pagination-link pagination-link2" href="#slide2">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                            </svg>
+                      </a>
+                      <a class="pagination-link pagination-link3" href="#slide3">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                        </svg>
+                      </a>
                       </div>
                   </div>
                   <div class="properties">
-                      <p class="slider-text"><span class="property">48 часов </span>Без подзарядки</p>
+                      <p class="slider-text"><span class="property">48 часов </span><br>Без подзарядки</p>
                   </div>
               </div>
               </div>
   
-              <div class="slide">
+              <div id="slide3" class="slide">
                   <div class="slide-left">
-                      <img class="slide-img" src="img/slider-3.png" alt="Квадрокоптер">
+                      <img class="slide-img" src="img/slider/slider-3.png" alt="Квадрокоптер" width="526" height="334">
                   </div>
                   <div class="slide-right">
-                  <div class="slider-number">03</div>
+                  <div class="slider-number"><svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100" height="7" fill="white"/>
+                  </svg>
+                      <p class="number-text">03</p></div>
                   <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
-                  <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                  <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                       мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">подробнее</a>
+                      <a class="slider-details" href="catalog.html">
+                      <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="220" height="8" fill="#F0C52E"/>
+                        </svg>подробнее</a>
                       <div class="pagination">
-                      <a class="pagination-link" href="#"></a>
-                      <a class="pagination-link" href="#"></a>
-                      <a class="pagination-link pagination-link-active" href="#"></a>
+                      <a class="pagination-link" href="#slide1">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6" r="5.5" stroke="black"/>
+</svg></a>
+                      <a class="pagination-link" href="#slide2">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6" r="5.5" stroke="black"/>
+</svg></a>
+                      <a class="pagination-link pagination-link-active" href="#slide3">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="6" cy="6" r="5.5" stroke="black"/>
+</svg></a>
                       </div>
                   </div>
                   <div class="properties">
-                      <p class="slider-text"><span class="property">800 м </span>Дальность полета</p>
-                      <p class="slider-text"><span class="property">50 м </span>Радиус поражения</p>
+                      <p class="slider-text"><span class="property">800 м </span><br>Дальность полета</p>
+                      <p class="slider-text"><span class="property">50 м </span><br>Радиус поражения</p>
                   </div>
                   </div>
               </div>
+              </div>
+              </div>
           </section>
+          
+          
           <section class="chapters">
              <h2 class="none">Категории товаров</h2>
               <ul class="chapter-list">
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-1.svg" alt="Виртуальная реальность">
+                      <p class="chapter-img"><img src="img/popular/popular-1.svg" width="97" height="55"></p>
                       <h3>Виртуальная реальность</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-2.svg" alt="Моноподы для селфи">
+                      <p class="chapter-img"><img src="img/popular/popular-2.svg" width="86" height="117"></p>
                       <h3>Моноподы для селфи</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-3.svg" alt="Экшн-камеры">
+                      <p class="chapter-img"><img src="img/popular/popular-3.svg" width="71" height="87"></p>
                       <h3>Экшн-камеры</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-4.svg" alt="Фитнес-браслеты">
+                      <p class="chapter-img"><img src="img/popular/popular-4.svg" width="107" height="65"></p>
                       <h3>Фитнес-браслеты</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-5.svg" alt="Умные часы">
+                      <p class="chapter-img"><img src="img/popular/popular-5.svg" width="56" height="98"></p>
                       <h3>Умные часы</h3>
                   </a>
               </li>
   
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
-                      <img src="img/popular-6.svg" alt="Квадрокоптеры">
+                      <p class="chapter-img"><img src="img/popular/popular-6.svg" width="132" height="69"></p>
                       <h3>Квадрокоптеры</h3>
                   </a>
               </li>
@@ -234,10 +273,10 @@
           </section>
           <section class="brends">
               <h2 class="none">Любимые бренды</h2>
-              <a class="brend-link" href="#"><img src="img/logo-1.png" alt="brend"></a>
-              <a class="brend-link" href="#"><img src="img/logo-3.png" alt="brend"></a>
-              <a class="brend-link" href="#"><img src="img/logo-4.png" alt="brend"></a>
-              <a class="brend-link" href="#"><img src="img/logo-2.png" alt="brend"></a>
+              <a class="brend-link" href="#"><img src="img/brends/logo-1.png" alt="brend dji"></a>
+              <a class="brend-link" href="#"><img src="img/brends/logo-3.png" alt="brend SPgadgets"></a>
+              <a class="brend-link" href="#"><img src="img/brends/logo-4.png" alt="brend gopro"></a>
+              <a class="brend-link" href="#"><img src="img/brends/logo-2.png" alt="brend vive"></a>
           </section>
   
           <section class="information">
@@ -261,7 +300,7 @@
                       проверить работоспособность покупки. Всякое бывает.</p>
                       <!-- карта в модальном окне -->
                   <a class="map-link" href="https://yandex.ru/maps/?um=constructor%3A0f38cbfa6daa32924978b7d7535a2a2a3429eadb33dad07c6a43eb1ac3338e23&source=constructorLink">
-                      <img src="img/map.jpg" alt="Карта">
+                      <img src="img/map.png" alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
                   </a>
                   <a class="info-form-link" href="blank.html">напишите нам</a>
               </div>
@@ -284,33 +323,16 @@
      <footer> 
       <ul class="footer-action-menu">
           <li class="footer-action-item"><a class="footer-action-link" href="#">
-              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.50002 2.33333C7.6971 2.33333 8.66669 3.3775 8.66669 4.66666C8.66669 5.95583 7.6971 7 6.50002 7C5.30294 7 4.33335 5.95583 4.33335 4.66666C4.33335 3.3775 5.30294 2.33333 6.50002 2.33333ZM6.50002 11.6667C6.50002 11.6667 10.8334 11.6667 10.8334 10.5C10.8334 9.1 8.72085 7.58333 6.50002 7.58333C4.27919 7.58333 2.16669 9.1 2.16669 10.5C2.16669 11.6667 6.50002 11.6667 6.50002 11.6667Z" fill="black"/>
-              </svg> 
-              Войти</a></li>
+              <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
           <li class="footer-action-item"><a class="footer-action-link" href="#">  
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.91669 5.36666H4.66669V11.0833H2.91669V5.36666ZM6.18335 2.91666H7.81669V11.0833H6.18335V2.91666ZM9.45002 7.58333H11.0834V11.0833H9.45002V7.58333Z" fill="black"/>
-              </svg> 
-              Сравнить</a></li>
+              <img src="img/icons/icon_chart.svg" width="14" height="14">Сравнить</a></li>
           <li class="footer-action-item"><a class="footer-action-link" href="#">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-              <path d="M9.86203 2.52171C9.79266 2.43992 9.69329 2.39317 9.58915 2.39317H7.65761V3.41881C7.65761 3.89009 7.25347 4.27351 6.75671 4.27351C6.25996 4.27351 5.85581 3.89009 5.85581 3.41881V2.39317H4.05401V3.41881C4.05401 3.89009 3.64987 4.27351 3.15311 4.27351C2.65635 4.27351 2.25221 3.89009 2.25221 3.41881V2.39317H0.320768C0.216534 2.39317 0.117164 2.43992 0.0477949 2.52171C-0.0216646 2.60351 -0.0545475 2.71257 -0.0426556 2.82146L0.605543 8.78462C0.617615 9.45692 1.14167 10 1.78419 10H8.12572C8.76815 10 9.29221 9.45693 9.30437 8.78453L9.95257 2.82137C9.96437 2.71257 9.93149 2.60351 9.86203 2.52171Z" fill="#231F20"/>
-              <path d="M3.15309 3.76068C3.35182 3.76068 3.51345 3.60735 3.51345 3.4188V1.53846C3.51345 1.01051 4.07462 0.683761 4.59453 0.683761H5.49543C6.04264 0.683761 6.39633 1.01923 6.39633 1.53846V3.4188C6.39633 3.60735 6.55804 3.76068 6.75669 3.76068C6.95534 3.76068 7.11705 3.60735 7.11705 3.4188V1.53846C7.11705 0.647009 6.43507 0 5.49543 0H4.59453C3.60101 0 2.79272 0.690171 2.79272 1.53846V3.4188C2.79272 3.60735 2.95435 3.76068 3.15309 3.76068Z" fill="#231F20"/>
-              </g>
-              <defs>
-              <clipPath id="clip1">
-              <rect width="10" height="10" fill="white"/>
-              </clipPath>
-              </defs>
-              </svg> 
-              Корзина</a></li>
+              <img src="img/icons/icon_cart.svg" width="10" height="10"> Корзина</a></li>
       </ul>
   <section class="footer-content"> 
       <h2 class="none">Контакты</h2>    
   <div class="footer-left">
-      <a class="logo-link footer-logo" href="#"><img class="logo logo-footer" src="img/logo.svg" alt="logo"></a>
+      <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип магазина Девайс"></a>
       <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
   </div>
   <div class="footer-center">
@@ -320,9 +342,9 @@
           <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
       </ul>
       <ul class="social">
-          <li class="social-item"><a class="social-link" href="#"><img src="img/face.svg" alt="facebook"></a></li>
-          <li class="social-item"><a class="social-link" href="#"><img src="img/icon_instagram.svg" alt="instagram"></a></li>
-          <li class="social-item"><a class="social-link" href="#"><img src="img/icon_witter.svg" alt="twitter"></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/social/facebook.svg" width="32" height="32" alt="facebook"></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/social/insta.svg" width="32" height="32" alt="instagram"></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/social/twit.svg" width="32" height="32" alt="twitter"></a></li>
       </ul>
   </div>
   <div class="footer-right">
