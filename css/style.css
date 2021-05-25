@@ -56,13 +56,15 @@ section, div, ul, form {
     top: -1000px;
 }
 .container {
-width: 1160px;
-margin: 0 auto;
+    width: 1160px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .header-main {
-height: 300px;
-background: #F7E296;
-margin-top: 40px;
+    height: 300px;
+    background: #F7E296;
+    margin-top: 40px;
+    padding: 44px 60px 0;
 }
 .logo-link{
     position: absolute;
@@ -212,7 +214,7 @@ margin-top: 40px;
 
 
 .slider{
-    margin-top: -146px;
+    margin-top: -102px;
     position: relative;
 }
 .slider-inner {
@@ -229,10 +231,12 @@ margin-top: 40px;
     flex-shrink: 0;
     float: left;
     width: 1160px;
+    height: 526px;
 }
 .slide-right{
-    width: 500px;
-    height: 526px;
+    width: 560px;
+    margin-right: 60px;
+    
 }
 .slide-left {
     flex-grow: 1;
@@ -247,6 +251,9 @@ margin-top: 40px;
     line-height: 58px;
     position: relative;
     z-index: 2;
+    margin-top: 110px;
+    margin-bottom: -25px;
+    top: -55px;
 }
 .slider-text{
     font-family: Gilroy;
@@ -317,7 +324,7 @@ margin-top: 40px;
 }
 .number-text{
     position: absolute;
-    top: -50px;
+    top: -42px;
     right: -5px;
     margin: 0;
     z-index: 1;
@@ -344,7 +351,7 @@ margin-top: 40px;
     width: 160px;
     height: 282px;
 }
-.chapter-link{
+.chapter-link h3{
     font-family: "Gilroy";
     font-weight: 800;
     font-size: 18px;
@@ -378,5 +385,72 @@ margin-top: 40px;
 
 
 
+
+footer{
+    background: #363636;
+    height: 324px;
+    padding-top: 46px;
+}
+
+.footer-action-menu{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 40px;
+}
+.footer-action-item img{
+    margin-right: 11px;
+    
+}
+.footer-action-link{
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-logo-link{
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-text{
+    color: #FFFFFF;
+    margin: 40px auto 60px 0;
+}
+.footer-nav-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 36px;
+    margin: 72px auto 67px;
+}
+.footer-nav-link{
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 33px;
+}
+.tel-link{
+    color: #FFFFFF;
+}
+.education-link{
+    margin-top: 8px;
+}
+#rectangle {
+	width: 80px;
+    height: 7px;
+    background: #FFC600;
+}
 
 

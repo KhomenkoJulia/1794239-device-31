@@ -11,10 +11,10 @@
   </head>
   <body>
 
-    <header class="header-main">
-     <div class="container">
+    <header class="header-main container">
       <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
-          <nav class="nav-menu"><div class="nav-menu-top">
+          <nav class="nav-menu">
+                       <div class="nav-menu-top">
                         <form class="search-form" action="#" method="get">
                             <label for="search-input">
                                 <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
@@ -38,7 +38,8 @@
                       <a class="nav-action-link" href="#">
                       <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">Корзина</a>
                   </li>
-              </ul></div>
+              </ul>
+              </div>
               
                  <div class="nav-bottom">
                   <div class="top-menu">
@@ -62,7 +63,6 @@
                       <a class="nav-link" href="#contacts">контакты</a></li>
               </ul></div>
           </nav>
-      </div>
      </header> 
      <main>
          <h1 class="none">Магазин Device</h1>
@@ -77,11 +77,12 @@
                       <img class="slide-img" src="img/slider/slider-1.png" alt="Палка для селфи" width="384" height="486">
                   </div>
                   <div class="slide-right">
-                  <div class="slider-number"><svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="slider-number">
+                  <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="100" height="7" fill="white"/>
                   </svg>
                       <p class="number-text">01</p></div>
-                  <h3 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h3>
+                  <h4 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h4>
                   <p>Самая длинная палка для селфи доступна в нашем магазине. 
                       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <div class="slider-buttons">
@@ -122,7 +123,7 @@
                   <rect width="100" height="7" fill="white"/>
                   </svg>
                     <p class="number-text">02</p></div>
-                  <h3 class="slider-title">Худеем правильно!</h3>
+                  <h4 class="slider-title">Худеем правильно!</h4>
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  
                       не пропускать занятия и соблюдать диету.</p>
                   <div class="slider-buttons">
@@ -163,7 +164,7 @@
                   <rect width="100" height="7" fill="white"/>
                   </svg>
                       <p class="number-text">03</p></div>
-                  <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+                  <h4 class="slider-title">Порхает как бабочка, жалит как пчела!</h4>
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                       мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="slider-buttons">
@@ -210,7 +211,7 @@
               <li class="chapter-item">
                   <a class="chapter-link" href="catalog.html">
                       <p class="chapter-img"><img src="img/popular/popular-2.svg" width="86" height="117"></p>
-                      <h3>Моноподы для селфи</h3>
+                      <h3>Моноподы<br> для селфи</h3>
                   </a>
               </li>
   
@@ -300,7 +301,7 @@
                       проверить работоспособность покупки. Всякое бывает.</p>
                       <!-- карта в модальном окне -->
                   <a class="map-link" href="https://yandex.ru/maps/?um=constructor%3A0f38cbfa6daa32924978b7d7535a2a2a3429eadb33dad07c6a43eb1ac3338e23&source=constructorLink">
-                      <img src="img/map.png" alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
+                      <img src="img/map.png" width="560" height="222" alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
                   </a>
                   <a class="info-form-link" href="blank.html">напишите нам</a>
               </div>
@@ -320,7 +321,9 @@
   
           </section>
      </main>
-     <footer> 
+     
+     
+     <footer> <div class="container">
       <ul class="footer-action-menu">
           <li class="footer-action-item"><a class="footer-action-link" href="#">
               <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
@@ -334,6 +337,7 @@
   <div class="footer-left">
       <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип магазина Девайс"></a>
       <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      <div id="rectangle"></div>
   </div>
   <div class="footer-center">
       <ul class="footer-nav-list">
@@ -351,7 +355,8 @@
       <p class="footer-text">Тел.: <a class="tel-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
       <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="education-logo" src="img/logo_htmlacademy.svg" alt="html academy"></a>
   </div>
-  </section>  
+  </section> 
+    </div> 
      </footer>
      <!-- В макете не нашла попап формы входа
     <section>
