@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="header-main container">
       <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
@@ -19,7 +20,7 @@
                             <label for="search-input">
                                 <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
                             </label>
-                            <input id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+                            <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
                             <button class="search-button" type="submit">найти</button>
                               <svg class="search-line" width="440" height="2" viewBox="0 0 440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="1" x2="440" y2="1" stroke="black" stroke-width="2"/>
@@ -43,10 +44,9 @@
               
                  <div class="nav-bottom">
                   <div class="top-menu">
-                      <a class="nav-link" href="catalog.html">каталог товаров</a> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18.7 9.9V12.1H12.1V18.7H9.90002V12.1H3.30002V9.9H9.90002V3.3H12.1V9.9H18.7Z" fill="black" fill-opacity="0.3"/>
-                          </svg>
-                          <ul class="submenu">
+                      <a class="nav-link" href="catalog.html">каталог товаров </a> 
+                         
+                          <ul class="submenu-list">
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Виртуальная реальность</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
@@ -62,12 +62,11 @@
                   <li class="nav-item">
                       <a class="nav-link" href="#contacts">контакты</a></li>
               </ul></div>
+              
           </nav>
      </header> 
      <main>
          <h1 class="none">Магазин Device</h1>
-         
-         
           <section class="slider container">
               <h2 class="none">Хиты продаж!</h2>
               <div class="slider-inner">
@@ -83,13 +82,10 @@
                   </svg>
                       <p class="number-text">01</p></div>
                   <h4 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h4>
-                  <p>Самая длинная палка для селфи доступна в нашем магазине. 
-                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">
-                       <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="220" height="8" fill="#F0C52E"/>
-                        </svg>подробнее</a>
+                      <a class="slider-link link-details" href="catalog.html">
+                       подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link pagination-link1" href="#slide1">
                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,11 +101,18 @@
                           </svg></a>
                       </div>
                   </div>
-                  <div class="properties">
-                      <p class="slider-text"><span class="property">8,5 м </span><br>Длина палки</p>
-                      <p class="slider-text"><span class="property">5 кг </span><br>Вес палки</p>
-                      <p class="slider-text"><span class="property">Карбон </span><br>Материал</p>
-                  </div>
+                      <table class="properties">
+                          <tr>
+                              <td>8,5 м</td>
+                              <td>5 кг</td>
+                              <td>Карбон</td>
+                          </tr>
+                          <tr>
+                              <th>Длина палки</th>
+                              <th>Вес палки</th>
+                              <th>Материал</th>
+                          </tr>
+                      </table>
                   </div>
               </div>
   
@@ -127,10 +130,7 @@
                   <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  
                       не пропускать занятия и соблюдать диету.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">
-                      <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="220" height="8" fill="#F0C52E"/>
-                        </svg>подробнее</a>
+                      <a class="slider-link link-details" href="catalog.html">подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link pagination-link1" href="#slide1">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,9 +149,14 @@
                       </a>
                       </div>
                   </div>
-                  <div class="properties">
-                      <p class="slider-text"><span class="property">48 часов </span><br>Без подзарядки</p>
-                  </div>
+                       <table class="properties">
+                          <tr>
+                              <td>48 часов</td>
+                          </tr>
+                          <tr>
+                              <th>Без подзарядки</th>
+                          </tr>
+                      </table>
               </div>
               </div>
   
@@ -168,29 +173,32 @@
                   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
                       мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="slider-buttons">
-                      <a class="slider-details" href="catalog.html">
-                      <svg class="button-rectangle" width="220" height="8" viewBox="0 0 220 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="220" height="8" fill="#F0C52E"/>
-                        </svg>подробнее</a>
+                      <a class="slider-link link-details" href="catalog.html">подробнее</a>
                       <div class="pagination">
                       <a class="pagination-link" href="#slide1">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6" r="5.5" stroke="black"/>
-</svg></a>
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                          </svg></a>
                       <a class="pagination-link" href="#slide2">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6" r="5.5" stroke="black"/>
-</svg></a>
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                          </svg></a>
                       <a class="pagination-link pagination-link-active" href="#slide3">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="6" r="5.5" stroke="black"/>
-</svg></a>
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
+                          </svg></a>
                       </div>
                   </div>
-                  <div class="properties">
-                      <p class="slider-text"><span class="property">800 м </span><br>Дальность полета</p>
-                      <p class="slider-text"><span class="property">50 м </span><br>Радиус поражения</p>
-                  </div>
+                  <table class="properties">
+                          <tr>
+                              <td>800 м</td>
+                              <td>50 м</td>
+                          </tr>
+                          <tr>
+                              <th>Дальность полета</th>
+                              <th>Радиус поражения</th>
+                          </tr>
+                      </table>
                   </div>
               </div>
               </div>
@@ -246,16 +254,19 @@
           </section>
   
           <section class="advantages">
+           <div class="advantages-container container">
             <div class="advantage-links">
-                <a class="advantage-link advantage-link-active" href="#">Доставка</a>
-                <a class="advantage-link" href="#">Гарантия</a>
-                <a class="advantage-link" href="#">Кредит</a>
+                <a class="advantage-link" href="#delivery">Доставка</a>
+                <a class="advantage-link" href="#warranty">Гарантия</a>
+                <a class="advantage-link" href="#credit">Кредит</a>
+                <div class="advantage-rect"></div>
             </div>
+               
+             <div class="advantage-services">
+             <div class="advantage-content">
               <div class="advantage advantage-delivery" id="delivery">
                   <h2>Доставка</h2>
-                  <p class="advantage-text">Мы с удовольствием доставим ваш товар прямо к вашему 
-                      подъезду совершенно бесплатно! Ведь мы неплохо 
-                      заработаем, поднимая его на ваш этаж.</p>
+                  <p class="advantage-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
   
               <div class="advantage advantage-warranty" id="warranty">
@@ -265,14 +276,17 @@
                       Товар, не дом, конечно же.</p>
               </div>
   
-              <div class="advantage advantage-credit">
+              <div class="advantage advantage-credit" id="credit">
                   <h2>Кредит</h2>
                   <p class="advantage-text">Залезть в долговую яму стало проще! Кредитные консультанты 
                       подберут для вас наиболее выгодные 
                       условия кредита. Выгодные для нашего банка, разумеется.</p>
               </div>
+              </div>
+              </div>
+              </div>
           </section>
-          <section class="brends">
+          <section class="brends container">
               <h2 class="none">Любимые бренды</h2>
               <a class="brend-link" href="#"><img src="img/brends/logo-1.png" width="260" height="100" alt="brend dji"></a>
               <a class="brend-link" href="#"><img src="img/brends/logo-3.png" width="260" height="100" alt="brend SPgadgets"></a>
@@ -280,8 +294,9 @@
               <a class="brend-link" href="#"><img src="img/brends/logo-2.png" width="260" height="100" alt="brend vive"></a>
           </section>
   
-          <section class="information">
+          <section class="information container">
               <div class="info" id="about">
+                  <div id="rectangle-black"></div>
                   <h2>О нас</h2>
                   <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, 
                       который есть в каждом из нас.</p>
@@ -292,39 +307,25 @@
                       <li class="info-item">Автотрейдинг</li>
                       <li class="info-item">ЖелДорЭкспедиция</li>
                   </ul>
-                  <a class="info-details" href="#">подробнее о нас</a>
+                  <a class="info-details link-details" href="blank.html">подробнее о нас</a>
               </div>
   
               <div class="info" id="contacts">
+                  <div id="rectangle-black"></div>
                   <h2>Контакты</h2>
-                  <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
-                      проверить работоспособность покупки. Всякое бывает.</p>
+                  <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                       <!-- карта в модальном окне -->
                   <a class="map-link" href="https://yandex.ru/maps/?um=constructor%3A0f38cbfa6daa32924978b7d7535a2a2a3429eadb33dad07c6a43eb1ac3338e23&source=constructorLink">
                       <img src="img/map.png" width="560" height="222" alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
                   </a>
-                  <a class="info-form-link" href="blank.html">напишите нам</a>
+                  <a class="info-form-link link-details" href="blank.html">напишите нам</a>
               </div>
-              <!-- форма в модальном окне -->
-              <!-- <form action="#" method="post" class="letter-form">
-                  <label for="name-input">Ваше имя:</label>
-                  <input id="name-input" type="text" name="name" placeholder="Имя Фамилия" autofocus required>
-                  
-                  <label for="email-input">Ваш e-mail:</label>
-                  <input id="email-input" type="email" name="e-mail" placeholder="email@example.com" tabindex="2" required>
-                  
-                  <label for="yourmessage">Текст письма:</label>
-                  <textarea id="yourmessage" name="message" rows=5 tabindex="3">В свободной форме</textarea>
-                  
-                  <button type="submit">отправить</button>
-              </form> -->
-  
           </section>
      </main>
      
      
      <footer> <div class="container">
-      <ul class="footer-action-menu">
+      <ul class="footer-action-list">
           <li class="footer-action-item"><a class="footer-action-link" href="#">
               <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
           <li class="footer-action-item"><a class="footer-action-link" href="#">  
@@ -337,7 +338,7 @@
   <div class="footer-left">
       <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
       <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
-      <div id="rectangle"></div>
+      <div class="rectangle-yellow"></div>
   </div>
   <div class="footer-center">
       <ul class="footer-nav-list">
@@ -345,7 +346,7 @@
           <li class="footer-nav-item"><a class="footer-nav-link" href="#warranty">гарантия</a></li>
           <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
       </ul>
-      <ul class="social">
+      <ul class="social-list">
           <li class="social-item">
               <a class="social-link" href="#">
               <img src="img/social/facebook.svg" width="32" height="32" alt="facebook"></a></li>
@@ -359,34 +360,35 @@
   </div>
   <div class="footer-right">
       <p class="footer-text">Тел.: <a class="tel-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
-      <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="education-logo" src="img/logo_htmlacademy.svg" alt="html academy"></a>
+      <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="education-logo" width="115" height="33" src="img/logo_htmlacademy.svg" alt="html academy"></a>
   </div>
   </section> 
     </div> 
      </footer>
-     <!-- В макете не нашла попап формы входа
-    <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите пожалуйста свой логин и пароль</p>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="login-login">Логин</label>
-        <input id="login-login" type="email" name="login" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="login-password">Пароль</label>
-        <input id="login-password" type="password" name="password" placeholder="••••••••">
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" name="remember">
-          Запомните меня
-        </label>
-        <a href="#">Я забыл пароль!</a>
-      </p>
-      <button type="submit">Войти</button>
-    </form>
-    <button type="button">Закрыть</button>
-  </section> -->
+     
+     <section class="modal modal-map">
+  <h2 class="none">Как до нас добраться</h2>
+  <!-- Здесь будет карта -->
+  <p><button class="modal-close" type="button"></button></p>
+</section>
+ 
+ <!-- форма в модальном окне -->
+           <section class="modal modal-letter">
+           <h2 class="none">Напишите нам</h2>
+           <p><button class="modal-close" type="button"></button></p>
+            <form action="#" method="post" class="letter-form">
+                <p><label for="name-input">Ваше имя:</label>
+                <input class="letter-input" id="name-input" type="text" name="name" placeholder="Имя Фамилия" autofocus></p>
+                  
+                <p><label for="email-input">Ваш e-mail:</label>
+                <input class="letter-input" id="email-input" type="email" name="e-mail" placeholder="email@example.com" tabindex="2"></p>
+                  
+                <p><label for="yourmessage">Текст письма:</label>
+                <textarea class="letter-textarea" id="yourmessage" name="message" rows=5 tabindex="3">В свободной форме</textarea></p>
+                  
+                  <button type="submit" class="letter-button link-details">отправить</button>
+              </form></section>
+  
+ 
   </body>
 </html>
