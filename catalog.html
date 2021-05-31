@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,44 +12,44 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
-    <header class="header-main container">
-        <a class="logo-link" href="index.html"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
-            <nav class="nav-menu">
-                <ul class="nav-action-list">
-                    <li class="nav-action-item">
-                          <form class="search-form" action="#" method="get">
-                              <label for="search-input">
+<body class="page-body">
+    <header class="header-main header-catalog container">
+      <a class="logo-link" href="index.html"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+          <nav class="nav-menu">
+                       <div class="nav-menu-top">
+                        <form class="search-form" action="#" method="get">
+                            <label for="search-input">
                                 <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
-                              </label>
-                              <input id="search-input" type="text" name="search" placeholder="Поиск по сайту">
-                              <button class="search-button" type="submit">найти</button>
-                          </form>
-                    </li>
-                    <li class="nav-action-item">
-                        <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">
-                        <a class="profile-link" href="#">Валентин Петухов</a>
-                        <a class="exit" href="#">Выйти</a>
-                    </li>
-                    <li class="nav-action-item">
-                        <a class="nav-action-link" href="#">
-                        <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14" height="14">
-                        Сравнить</a>
-                    </li>
-                    <li class="nav-action-item">
-                        <a class="nav-action-link" href="#">
-                        <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">
-                        Корзина</a>
-                    </li>
-                </ul>
-                
-                   
-                   <div class="nav-bottom">
+                            </label>
+                            <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+                            <button class="search-button" type="submit">найти</button>
+                              <svg class="search-line" width="440" height="2" viewBox="0 0 440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="1" x2="440" y2="1" stroke="black" stroke-width="2"/>
+                                </svg>
+                        </form>
+                  <ul class="nav-action-list">
+                  <li class="nav-action-item">
+                      <a class="nav-action-link profile-link" href="#">Валентин Петухов</a>
+                      <a class="nav-action-link exit-link" href="#">
+                      <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">Выйти</a>
+                  </li>
+                  
+                  <li class="nav-action-item">
+                      <a class="nav-action-link" href="#">
+                      <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14" height="14">Сравнить</a>
+                  </li>
+                  <li class="nav-action-item">
+                      <a class="nav-action-link" href="#">
+                      <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">Корзина</a>
+                  </li>
+              </ul>
+              </div>
+              
+                 <div class="nav-bottom">
                   <div class="top-menu">
-                      <a class="nav-link" href="catalog.html">каталог товаров</a> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18.7 9.9V12.1H12.1V18.7H9.90002V12.1H3.30002V9.9H9.90002V3.3H12.1V9.9H18.7Z" fill="black" fill-opacity="0.3"/>
-                          </svg>
-                          <ul class="submenu">
+                      <a class="nav-link" href="catalog.html">каталог товаров </a> 
+                         
+                          <ul class="submenu-list">
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Виртуальная реальность</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
                               <li class="submenu-item"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
@@ -59,24 +59,20 @@
                           </ul></div>
               <ul class="nav-list">
                   <li class="nav-item">
-                      <a class="nav-link" href="#delivery">доставка</a></li>
+                      <a class="nav-link" href="index.html#delivery">доставка</a></li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#warranty">гарантия</a></li>
+                      <a class="nav-link" href="index.html#warranty">гарантия</a></li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#contacts">контакты</a></li>
+                      <a class="nav-link" href="index.html#contacts">контакты</a></li>
               </ul></div>
-                
-                
-                
-            </nav>
-            <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100" height="7" fill="white"/>
-            </svg>
-       </header> 
-
-       <main>
-        <h1>Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+              
+          </nav>
+     </header> 
+     
+       <main class="main-catalog">
+        <div class="wrapper">
+            <h1 class="title-page">Моноподы для селфи</h1>
+            <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.14749 8.94243L6.43749 6.64743L4.14749 4.35243L4.85249 3.64743L7.85249 6.64743L4.85249 9.64743L4.14749 8.94243Z" fill="black"/>
                 </svg></li>
@@ -85,9 +81,12 @@
                 </svg></li>
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Моноподы для селфи</a></li>
             </ul>
+        </div>
+        
+        
         <section class="filter">
-            <h2 class="none">Фильтр товаров</h2>
-            <p class="filter-title">фильтр:</p>
+           
+            <h2 class="filter-title">фильтр:</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=pricecount.value">
                 <fieldset class="filter-fieldset">
                     <legend>Стоимость</legend>
@@ -125,18 +124,18 @@
                         <label for="bluetooth-false">Нет</label>
                         <input id="bluetooth-false" type="radio" name="bluetooth" value="Нет"></p>
                 </fieldset>
-                <button class="filter-button" type="submit">показать</button>
+                <button class="filter-button link-details" type="submit">показать</button>
             </form>
         </section>
 
         <section class="sorting">
-            <h2 class="none">Сортировка товаров</h2>
+            <h2 class="filter-title">Сортировка</h2>
             <ul class="sort-list">
-                    <li class="sort-item"><a class="sort-link">По цене</a></li>
+                    <li class="sort-item"><a class="sort-link sort-link-active">По цене</a></li>
                     <li class="sort-item"><a class="sort-link">По типу</a></li>
                     <li class="sort-item"><a class="sort-link">По популярности</a></li>
-                    <li class="sort-item"><a class="sort-link">min</a></li>
-                    <li class="sort-item"><a class="sort-link">max</a></li>
+                    <li class="sort-item"><a class="sort-link-min"></a></li>
+                    <li class="sort-item"><a class="sort-link-max sort-link-active"></a></li>
             </ul>
         </section>
 
@@ -145,12 +144,12 @@
             <!-- Любому добавляется class="new"-->
             <ul class="cards-list">
             <li class="card-item">
-                <div class="card-image">
+                <div class="card-wrap">
                 <img src="img/catalog/item-1.jpg" width="360" height="381">
-                </div>
                 <div class="card-action">
-                    <button class="card">в корзину</button>
-                    <button class="compare">Добавить к сравнению</button>
+                    <button class="catalog-button link-details">в корзину</button>
+                    <button class="compare-button">Добавить к сравнению</button>
+                </div>
                 </div>
                 <div class="card-text"> 
                     <a class="card-link"><h3>Любительская селфи-палка</h3></a>
@@ -159,12 +158,12 @@
             </li>
 
             <li class="card-item">
-                <div class="card-image">
+                <div class="card-wrap">
                 <img src="img/catalog/item-2.jpg" width="360" height="381">
-                </div>
                 <div class="card-action">
-                    <button class="card">в корзину</button>
-                    <button class="compare">Добавить к сравнению</button>
+                    <button class="catalog-button link-details">в корзину</button>
+                    <button class="compare-button">Добавить к сравнению</button>
+                </div>
                 </div>
                 <div class="card-text"> 
                     <a class="card-link"><h3>Профессиональная селфи-палка</h3></a>
@@ -173,12 +172,12 @@
             </li>
 
             <li class="card-item">
-                <div class="card-image">
+                <div class="card-wrap">
                 <img src="img/catalog/item-3.jpg" width="360" height="381">
-                </div>
                 <div class="card-action">
-                    <button class="card">в корзину</button>
-                    <button class="compare">Добавить к сравнению</button>
+                    <button class="catalog-button link-details">в корзину</button>
+                    <button class="compare-button">Добавить к сравнению</button>
+                </div>
                 </div>
                 <div class="card-text"> 
                     <a class="card-link"><h3>Непотопляемая селфи-палка</h3></a>
@@ -186,12 +185,12 @@
                 </div>
             </li>
             <li class="card-item">
-                <div class="card-image">
+                <div class="card-wrap">
                 <img src="img/catalog/item-4.jpg" width="360" height="381">
-                </div>
                 <div class="card-action">
-                    <button class="card">в корзину</button>
-                    <button class="compare">Добавить к сравнению</button>
+                    <button class="catalog-button link-details">в корзину</button>
+                    <button class="compare-button">Добавить к сравнению</button>
+                </div>
                 </div>
                 <div class="card-text"> 
                     <a class="card-link"><h3>Селфи-палка «Следуй за мной»</h3></a>
@@ -201,13 +200,13 @@
         </ul>
         </section>
             <section class="products-nav">
-                <button class="go-button" type="button" disabled>назад</button>
+                <button class="go-button button-back" type="button"> назад </button>
                 <ul class="go-list">
-                    <li class="go-item"><a class="go-link" href="#">1</a></li>
+                    <li class="go-item"><a class="go-link go-link-active" href="#">1</a></li>
                     <li class="go-item"><a class="go-link" href="#">2</a></li>
                     <li class="go-item"><a class="go-link" href="#">3</a></li>
                 </ul>
-                <button class="go-button" type="button">вперед</button>
+                <button class="go-button button-next" type="button"> вперед </button>
             </section>
        </main>
 
@@ -223,15 +222,15 @@
   <section class="footer-content"> 
       <h2 class="none">Контакты</h2>    
   <div class="footer-left">
-      <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+      <a class="footer-logo-link" href="index.html"><img class="logo-footer" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
       <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
       <div id="rectangle-yellow"></div>
   </div>
   <div class="footer-center">
       <ul class="footer-nav-list">
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#delivery">доставка</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#warranty">гарантия</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#delivery">доставка</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#warranty">гарантия</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="index.html#contacts">контакты</a></li>
       </ul>
       <ul class="social-list">
           <li class="social-item">

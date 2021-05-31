@@ -9,16 +9,17 @@
     --basic-light-yellow: #f7e296;
     --special-green: #91c92f;
     --special-rose: #f6dada;
+    --special-opacity: rgba(255, 255, 255, 0);
 }
 @font-face {
-    font-family: "Gilroy", sans-serif; 
+    font-family: "Gilroy"; 
     src: url("../fonts/gilroyextrabold.woff") format("woff"),
     url("../fonts/gilroyextrabold.woff2") format("woff2");
     font-style: normal;  
     font-weight: 800; 
 }
 @font-face {
-    font-family: "Gilroy", sans-serif; 
+    font-family: "Gilroy"; 
     src: url("../fonts/gilroylight.woff") format("woff"),
     url("../fonts/gilroylight.woff2") format("woff2");
     font-style: normal; 
@@ -32,7 +33,7 @@
     font-weight: 400; 
 }
 @font-face {
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Open Sans"; 
     src: url("../fonts/opensanslight.woff") format("woff"),
     url("../fonts/opensanslight.woff2") format("woff2");
     font-style: normal; 
@@ -47,6 +48,7 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
 }
 a {
     text-decoration: none;
@@ -54,7 +56,7 @@ a {
 }
 img {
   max-width: 100%;
-  height: auto;
+  height: auto; 
 }
 section, div, ul, form {
     outline: 1px solid red;
@@ -97,7 +99,10 @@ section, div, ul, form {
     display: flex;
     justify-content: space-between;
 }
+
+
 .search-form {
+    margin: -15px;
     padding: 0;
     width: 440px;
 }
@@ -105,36 +110,40 @@ section, div, ul, form {
     margin-right: 22px;
 }
 .search-line{
-    width: 440px;
-    display: none;
+    opacity: 0;
+    display: block;
 }
 .search-button{
-    display: none;
-    font-family: "Open Sans light";
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
     width: 84px;
     height: 50px;
     border: 2px solid var(--basic-black);
     border-bottom: none;
-    background: transparent;
+    background: var(--special-opacity);
     text-transform: uppercase;
+    opacity: 0;
 }
 .search-input{
     border: none;
     outline: none;
-    background: transparent;
+    background: var(--special-opacity);
     opacity: .3;
     width: 306px;
-    font-family: "Open Sans light";
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    height: 40px;
 }
 .search-input:hover{
     opacity: .6;
     outline: none;
 }
 .search-input:focus ~ .search-button{
-    display: inline-block;
+    opacity: 1;
 }
 .search-input:focus ~ .search-line{
-   display: block;
+    opacity: 1;
 }
 .search-button:hover{
     background: var(--basic-black);
@@ -166,19 +175,15 @@ section, div, ul, form {
 .nav-action-link:active{
     opacity: .3;
 }
-
-
-
-
-
-
 .nav-bottom{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
+    position: relative;
 }
 .nav-link{
-    font-family: "Gilroy";
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
@@ -191,23 +196,45 @@ section, div, ul, form {
     opacity: .3;
 }
 .top-menu{
+
+}
+.top-menu::after {
+    content: "+";
+    height:15.4px;
+    width:15.4px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
     
+
 }
 .submenu-list{
-    opacity: 0;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 60px;
+    height: 146px;
     display: flex;
-    font-family: "Open Sans light";
-    font-size: 16px;
     width: 1160px;
     position: absolute;
-    z-index: 1;
+    left: -60px;
+    z-index: 3;
+    box-sizing: border-box;
     background: var(--basic-light-yellow);
 }
 .submenu-item{
     margin-bottom: 20px;
+}
+.catalog-link{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+.catalog-link:hover{
+    opacity: .6;
+}
+.catalog-link:focus{
+    opacity: .3;
 }
 .top-menu:hover .submenu{
     opacity: 1;
@@ -258,7 +285,7 @@ section, div, ul, form {
     align-self: center;
 }
 .slider-title{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -268,6 +295,9 @@ section, div, ul, form {
     margin-top: 110px;
     margin-bottom: -25px;
     top: -55px;
+}
+.slider-text{
+    line-height: 20px;
 }
 .slider-buttons{
     display: flex;
@@ -279,7 +309,7 @@ section, div, ul, form {
     
 }
 .link-details{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -290,7 +320,7 @@ section, div, ul, form {
     align-items: center;
     height: 40px;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom, var(--basic-white) 16px, var(--basic-yellow) 16px, var(--basic-yellow) 24px, var(--basic-white) 24px);
+    background-image: linear-gradient(to bottom, var(--special-opacity) 16px, var(--basic-yellow) 16px, var(--basic-yellow) 24px, var(--special-opacity) 24px);
 }
 .link-details:hover{
     background: var(--basic-yellow);
@@ -311,7 +341,7 @@ section, div, ul, form {
    
 }
 .properties td{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 300;
     font-size: 36px;
     letter-spacing: 0.1em;
@@ -320,7 +350,7 @@ section, div, ul, form {
     text-align: left;
 }
 .properties th{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 300;
     font-size: 13px;
     letter-spacing: 0.1em;
@@ -332,7 +362,7 @@ section, div, ul, form {
 .slider-number{
     display: flex;
     align-items: flex-start;
-    font-family: "Gilroy";
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 179px;
     text-transform: uppercase;
@@ -372,7 +402,7 @@ section, div, ul, form {
     height: 282px;
 }
 .chapter-link h3{
-    font-family: "Gilroy";
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
@@ -419,6 +449,7 @@ section, div, ul, form {
 }
 .advantage-text{
     width: 495px;
+    line-height: 30px;
 }
 .advantage-links{
     width: 280px;
@@ -428,7 +459,7 @@ section, div, ul, form {
 .advantage-link{
     width: 160px;
     height: 40px;
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -437,14 +468,17 @@ section, div, ul, form {
     justify-content: center;
     align-items: center;
     height: 40px;
-    background-image: linear-gradient(to bottom, transparent 16px, var(--basic-yellow) 16px, var(--basic-yellow) 24px, transparent 24px);
+    background-image: linear-gradient(to bottom, var(--special-opacity) 16px, var(--basic-yellow) 16px, var(--basic-yellow) 24px, var(--special-opacity) 24px);
 }
 .advantage-link:hover{
     background: var(--basic-yellow);
 }
 .advantage-link:active{
-    background: var(--basic-yellow);
+    background: var(--basic-black);
+    color: var(--basic-white);
     width: 280px;
+    justify-content: flex-start;
+/*    не знаю, как сделать, чтобы текст не прыгал при active*/
 }
 .advantage-rect{
     width: 7px;
@@ -470,7 +504,7 @@ section, div, ul, form {
     background-position: right 86px;
 }
 h2 {
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 47px;
     letter-spacing: 0.2em; 
@@ -516,7 +550,7 @@ h2 {
 }
 .info-item{
     list-style-type: circle;
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
@@ -573,6 +607,7 @@ footer{
 .footer-text{
     color: var(--basic-white);
     margin: 40px auto 60px 0;
+    line-height: 20px;
 }
 .footer-nav-list{
     list-style-type: none;
@@ -583,7 +618,7 @@ footer{
     margin: 72px auto 67px;
 }
 .footer-nav-link{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -635,7 +670,6 @@ footer{
 	width: 80px;
     height: 7px;
     background: var(--basic-yellow);
-/* в макете цвет #FFC600, но его нет в стайлгайде и больше нигде на сайте не встречается, скорее всего - ошибка дизайнера*/
 }
 .modal-letter{
     width: 960px;
@@ -654,6 +688,26 @@ footer{
     opacity: 0.5;
     border-radius: 50%;
     border: none;
+    position: relative;
+}
+
+.modal-close::before,
+.modal-close::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 4px; 
+    background-color: var(--basic-white);
+    top: 45%;
+    left: 25%;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 .modal-close:hover{
     opacity: 1;
@@ -672,9 +726,8 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
-
 .letter-form label{
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-weight: 800;
     font-size: 18px;
     color: var(--basic-black);
@@ -696,7 +749,7 @@ footer{
 }
 .letter-input:focus,
 .letter-textarea:focus{
-    background: transparent;
+    background: var(--special-opacity);
     outline: none;
     border: 2px solid var(--basic-light-yellow);
     opacity: 1;
@@ -717,7 +770,7 @@ footer{
 }
 .letter-textarea::placeholder, 
 .letter-input::placeholder{
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--basic-black);
@@ -727,8 +780,205 @@ footer{
     margin-top: 30px;
     border: none;
     width: 200px;
+    background-color: var(--special-opacity);
 }
 .letter-button:active{
     background: var(--basic-black);
     color: var(--basic-white);
 }
+
+/*каталог*/
+.main-catalog{
+    font-size: 14px;
+}
+.title-page{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 47px;  
+}
+.breadcrumbs-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.breadcrumbs-link{
+    opacity: .3;
+}
+.breadcrumbs-link:hover{
+    opacity: .6;
+}
+.breadcrumbs-link:active{
+    opacity: .1;
+}
+.filter-title{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.sort-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sort-link-max{
+    border: 10px solid var(--special-opacity); border-top: 11px solid var(--basic-black);
+    width: 0;
+    opacity: .3;
+}
+.sort-link-min{
+    border: 10px solid var(--special-opacity); border-bottom: 11px solid var(--basic-black);
+    width: 0;
+    opacity: .3;
+}
+.sort-link-min:hover, .sort-link-max:hover{
+     opacity: .4;
+}
+.sort-link{
+    opacity: .3;
+}
+.sort-link:hover{
+     opacity: .6;
+}
+.sort-link-min:active, .sort-link-max:active, .sort-link:active, .sort-link-active{
+     opacity: 1;
+}
+.filter-fieldset{
+    border: none;
+}
+.filter-fieldset legend{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.filter-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.filter-button{
+    border: none;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: var(--special-opacity);
+}
+.cards-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.card-item{
+    width: 361px;
+    height: 454px;
+}
+.card-wrap{
+    position: relative;
+}
+.card-wrap:hover .card-action{
+    opacity: 1;
+}
+.card-action{
+    background: rgba(238, 238, 238, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.catalog-button{
+    position: absolute;
+    border: none;
+    width: 200px;
+    box-sizing: border-box;
+    top: 171px;
+    left: 77px;
+    background-color: var(--special-opacity);
+}
+.compare-button{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    opacity: .5;
+    border: none;
+    background-color: var(--special-opacity);
+    position: absolute;
+    text-align: center;
+    top: 224px;
+    left: 97px;
+}
+.compare-button:hover{
+    opacity: 1;
+}
+.compare-button:focus{
+    opacity: .2 ;
+}
+.card-text{
+    display: grid;
+    grid-template-columns: auto 90px;
+    
+}
+.card-link h3{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    
+}
+.card-price{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: right;
+}
+.products-nav{
+    
+}
+.go-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.go-link{
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    opacity: .3;
+}
+.go-link-active{
+    opacity: 1;
+}
+.go-link:hover{
+    opacity: .6;
+}
+.go-link:active{
+    opacity: 1;
+}
+.go-button{
+    border: none;
+    background-color: var(--special-opacity);
+    font-family: "Gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.go-button:hover{
+    background: #D9D9D9;
+}
+.go-button:active{
+    background: #D9D9D9;
+    opacity: .3;
+}
+
+
+
+
