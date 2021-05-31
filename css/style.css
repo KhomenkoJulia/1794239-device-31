@@ -26,7 +26,7 @@
     font-weight: 300; 
 }
 @font-face {
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Open Sans"; 
     src: url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
     font-style: normal; 
@@ -40,7 +40,7 @@
     font-weight: 300; 
 }
 body {
-    font-family: "Open Sans", sans-serif; 
+    font-family: "Open Sans", "Roboto", sans-serif; 
     font-size: 15px;
     font-weight: 300; 
     color: var(--basic-black);
@@ -115,7 +115,7 @@ section, div, ul, form {
 }
 .search-button{
     display: inline-block;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 300;
     width: 84px;
     height: 50px;
@@ -131,7 +131,7 @@ section, div, ul, form {
     background: var(--special-opacity);
     opacity: .3;
     width: 306px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 300;
     height: 40px;
 }
@@ -183,7 +183,7 @@ section, div, ul, form {
     position: relative;
 }
 .nav-link{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
@@ -225,7 +225,7 @@ section, div, ul, form {
     margin-bottom: 20px;
 }
 .catalog-link{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
@@ -285,7 +285,7 @@ section, div, ul, form {
     align-self: center;
 }
 .slider-title{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -309,7 +309,7 @@ section, div, ul, form {
     
 }
 .link-details{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -341,7 +341,7 @@ section, div, ul, form {
    
 }
 .properties td{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 36px;
     letter-spacing: 0.1em;
@@ -350,7 +350,7 @@ section, div, ul, form {
     text-align: left;
 }
 .properties th{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 13px;
     letter-spacing: 0.1em;
@@ -362,7 +362,7 @@ section, div, ul, form {
 .slider-number{
     display: flex;
     align-items: flex-start;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 179px;
     text-transform: uppercase;
@@ -402,7 +402,7 @@ section, div, ul, form {
     height: 282px;
 }
 .chapter-link h3{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
@@ -459,7 +459,7 @@ section, div, ul, form {
 .advantage-link{
     width: 160px;
     height: 40px;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -504,7 +504,7 @@ section, div, ul, form {
     background-position: right 86px;
 }
 h2 {
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;
     letter-spacing: 0.2em; 
@@ -550,7 +550,7 @@ h2 {
 }
 .info-item{
     list-style-type: circle;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;
@@ -618,7 +618,7 @@ footer{
     margin: 72px auto 67px;
 }
 .footer-nav-link{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -727,7 +727,7 @@ footer{
     gap: 10px;
 }
 .letter-form label{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     color: var(--basic-black);
@@ -770,7 +770,7 @@ footer{
 }
 .letter-textarea::placeholder, 
 .letter-input::placeholder{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--basic-black);
@@ -792,7 +792,7 @@ footer{
     font-size: 14px;
 }
 .title-page{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;  
 }
@@ -812,7 +812,7 @@ footer{
     opacity: .1;
 }
 .filter-title{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -849,7 +849,7 @@ footer{
     border: none;
 }
 .filter-fieldset legend{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 14px;
     letter-spacing: 0.1em;
@@ -900,7 +900,7 @@ footer{
     background-color: var(--special-opacity);
 }
 .compare-button{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 300;
     font-size: 13px;
     letter-spacing: 0.1em;
@@ -924,7 +924,7 @@ footer{
     
 }
 .card-link h3{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -932,7 +932,7 @@ footer{
     
 }
 .card-price{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
@@ -948,7 +948,7 @@ footer{
     padding: 0;
 }
 .go-link{
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     opacity: .3;
@@ -965,7 +965,7 @@ footer{
 .go-button{
     border: none;
     background-color: var(--special-opacity);
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.1em;
