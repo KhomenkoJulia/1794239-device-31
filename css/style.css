@@ -478,7 +478,6 @@ section, div, ul, form {
     color: var(--basic-white);
     width: 280px;
     justify-content: flex-start;
-/*    не знаю, как сделать, чтобы текст не прыгал при active*/
 }
 .advantage-rect{
     width: 7px;
