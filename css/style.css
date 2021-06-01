@@ -457,6 +457,10 @@ section, div, ul, form {
     margin-top: 86px;
 }
 .advantage-link{
+    width: 280px;
+    display: block;
+}
+.advantage-link-container{
     width: 160px;
     height: 40px;
     font-family: "Gilroy", "Arial", sans-serif;
@@ -470,14 +474,16 @@ section, div, ul, form {
     height: 40px;
     background-image: linear-gradient(to bottom, var(--special-opacity) 16px, var(--basic-yellow) 16px, var(--basic-yellow) 24px, var(--special-opacity) 24px);
 }
-.advantage-link:hover{
+.advantage-link:hover .advantage-link-container{
     background: var(--basic-yellow);
+}
+.advantage-link:active .advantage-link-container{
+    background: var(--basic-black);
+    color: var(--basic-white);
 }
 .advantage-link:active{
     background: var(--basic-black);
     color: var(--basic-white);
-    width: 280px;
-    justify-content: flex-start;
 }
 .advantage-rect{
     width: 7px;
