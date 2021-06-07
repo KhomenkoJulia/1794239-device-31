@@ -69,8 +69,9 @@
           </nav>
      </header> 
      
-       <main class="main-catalog">
-        <div class="wrapper">
+       
+           
+        <div class="breadcrumbs container">
             <h1 class="title-page">Моноподы для селфи</h1>
             <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,10 +83,12 @@
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Моноподы для селфи</a></li>
             </ul>
         </div>
-        
-        
+
+
+        <div class="all">
+        <div class="side-offset"></div>
+        <main class="main-catalog container">
         <section class="filter">
-           
             <h2 class="filter-title">фильтр:</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=pricecount.value">
                 <fieldset class="filter-fieldset">
@@ -131,11 +134,19 @@
         <section class="sorting">
             <h2 class="filter-title">Сортировка</h2>
             <ul class="sort-list">
-                    <li class="sort-item"><a class="sort-link sort-link-active">По цене</a></li>
-                    <li class="sort-item"><a class="sort-link">По типу</a></li>
-                    <li class="sort-item"><a class="sort-link">По популярности</a></li>
-                    <li class="sort-item"><a class="sort-link-min"></a></li>
-                    <li class="sort-item"><a class="sort-link-max sort-link-active"></a></li>
+                    <li class="sort-item"><a class="sort-link sort-link-active" href="#">По цене</a></li>
+                    <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
+                    <li class="sort-item"><a class="sort-link" href="#">По популярности</a></li>
+                    <li class="sort-item"><a class="sort-link sort-link-arrow" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 10H11L5.5 -2.98023e-07L0 10Z" fill="black"/>
+                        </svg>
+                    </a></li>
+                    <li class="sort-item"><a class="sort-link sort-link-arrow sort-link-active" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0L2.38419e-07 0L5.5 10L11 0Z" fill="black"/>
+                        </svg>
+                    </a></li>
             </ul>
         </section>
 
@@ -147,70 +158,76 @@
                 <div class="card-wrap">
                 <img src="img/catalog/item-1.jpg" width="360" height="381">
                 <div class="card-action">
-                    <button class="catalog-button link-details">в корзину</button>
-                    <button class="compare-button">Добавить к сравнению</button>
+                    <button class="catalog-button link-details" type="button">в корзину</button>
+                    <button class="compare-button" type="button">Добавить к сравнению</button>
                 </div>
                 </div>
-                <div class="card-text"> 
-                    <a class="card-link"><h3>Любительская селфи-палка</h3></a>
-                    <p class="card-price">1 100 руб.</p>
-                </div>
+                    <a class="card-link" href="#">
+                        <h3 class="card-title">Любительская селфи-палка</h3>
+                        <p class="card-price">1 100 руб.</p>
+                    </a>
             </li>
 
             <li class="card-item">
                 <div class="card-wrap">
                 <img src="img/catalog/item-2.jpg" width="360" height="381">
                 <div class="card-action">
-                    <button class="catalog-button link-details">в корзину</button>
-                    <button class="compare-button">Добавить к сравнению</button>
+                    <button class="catalog-button link-details" type="button">в корзину</button>
+                    <button class="compare-button" type="button">Добавить к сравнению</button>
                 </div>
                 </div>
-                <div class="card-text"> 
-                    <a class="card-link"><h3>Профессиональная селфи-палка</h3></a>
-                    <p class="card-price">1 500 руб.</p>
-                </div>
+                    <a class="card-link" href="#">
+                        <h3 class="card-title">Профессиональная селфи-палка</h3>
+                        <p class="card-price">1 500 руб.</p>
+                    </a>
             </li>
 
             <li class="card-item">
                 <div class="card-wrap">
                 <img src="img/catalog/item-3.jpg" width="360" height="381">
                 <div class="card-action">
-                    <button class="catalog-button link-details">в корзину</button>
-                    <button class="compare-button">Добавить к сравнению</button>
+                    <button class="catalog-button link-details" type="button">в корзину</button>
+                    <button class="compare-button" type="button">Добавить к сравнению</button>
                 </div>
                 </div>
-                <div class="card-text"> 
-                    <a class="card-link"><h3>Непотопляемая селфи-палка</h3></a>
-                    <p class="card-price">1 500 руб.</p>
-                </div>
+                    <a class="card-link" href="#">
+                        <h3 class="card-title">Непотопляемая селфи-палка</h3>
+                        <p class="card-price">1 500 руб.</p>
+                    </a>
             </li>
             <li class="card-item">
                 <div class="card-wrap">
                 <img src="img/catalog/item-4.jpg" width="360" height="381">
                 <div class="card-action">
-                    <button class="catalog-button link-details">в корзину</button>
-                    <button class="compare-button">Добавить к сравнению</button>
+                    <button class="catalog-button link-details" type="button">в корзину</button>
+                    <button class="compare-button" type="button">Добавить к сравнению</button>
                 </div>
                 </div>
-                <div class="card-text"> 
-                    <a class="card-link"><h3>Селфи-палка «Следуй за мной»</h3></a>
-                    <p class="card-price">1 900 руб.</p>
-                </div>
+                    <a class="card-link" href="#">
+                        <h3 class="card-title">Селфи-палка «Следуй за мной»</h3>
+                        <p class="card-price">1 900 руб.</p>
+                    </a>
             </li>
-        </ul>
+            </ul>
+        <div class="products-nav">
+            <button class="go-button button-back" type="button"> назад </button>
+            <ul class="go-list">
+                <li class="go-item"><a class="go-link go-link-active" href="#">1</a></li>
+                <li class="go-item"><a class="go-link" href="#">2</a></li>
+                <li class="go-item"><a class="go-link" href="#">3</a></li>
+            </ul>
+            <button class="go-button button-next" type="button"> вперед </button>
+        </div>
         </section>
-            <section class="products-nav">
-                <button class="go-button button-back" type="button"> назад </button>
-                <ul class="go-list">
-                    <li class="go-item"><a class="go-link go-link-active" href="#">1</a></li>
-                    <li class="go-item"><a class="go-link" href="#">2</a></li>
-                    <li class="go-item"><a class="go-link" href="#">3</a></li>
-                </ul>
-                <button class="go-button button-next" type="button"> вперед </button>
-            </section>
+       
        </main>
+    </div>
 
-     <footer> <div class="container">
+
+
+
+     <footer class=footer-main> 
+         <div class="container">
       <ul class="footer-action-list">
           <li class="footer-action-item"><a class="footer-action-link" href="#">
               <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
