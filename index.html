@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -9,375 +10,432 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-  </head>
-  <body class="page-body">
+</head>
+
+<body class="page-body">
 
     <header class="header-main container">
-      <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
-          <nav class="nav-menu">
-                       <div class="nav-menu-top">
-                        <form class="search-form" action="#" method="get">
-                            <label for="search-input">
-                                <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16"> 
-                            </label>
-                            <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
-                            <button class="search-button" type="submit">найти</button>
-                              <svg class="search-line" width="439" height="2" viewBox="0 0 440 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <line y1="1" x2="440" y2="1" stroke="black" stroke-width="2"/>
-                              </svg>
-                        </form>
-                  <ul class="nav-action-list">
-                  <li class="nav-action-item">
-                      <a class="nav-action-link" href="#">
-                      <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">Войти</a>
-                  </li>
-                  <li class="nav-action-item">
-                      <a class="nav-action-link" href="#">
-                      <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14" height="14">Сравнить</a>
-                  </li>
-                  <li class="nav-action-item">
-                      <a class="nav-action-link" href="#">
-                      <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">Корзина</a>
-                  </li>
-              </ul>
-              </div>
-              
-                 <div class="nav-bottom">
-                    <div class="top-menu">
-                        <a class="nav-link nav-catalog-link" href="catalog.html">каталог товаров</a> 
-                          <ul class="submenu-list">
-                              <li class="submenu-item item-a"><a class="catalog-link" href="catalog.html">Виртуальная реальность</a></li>
-                              <li class="submenu-item item-b"><a class="catalog-link" href="catalog.html">Моноподы для селфи</a></li>
-                              <li class="submenu-item item-c"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
-                              <li class="submenu-item item-d"><a class="catalog-link" href="catalog.html">Фитнес-браслеты</a></li>
-                              <li class="submenu-item item-e"><a class="catalog-link" href="catalog.html">Умные часы</a></li>
-                              <li class="submenu-item item-f"><a class="catalog-link" href="catalog.html">Квадрокоптер</a></li>
-                          </ul>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#delivery">доставка</a>
+        <a class="logo-link" href="#"><img class="logo" src="img/logo.svg" width="163" height="35"
+                alt="Логотип магазина Девайс"></a>
+        <nav class="nav-menu">
+            <div class="nav-menu-top">
+                <form class="search-form" action="#" method="get">
+                    <label for="search-input">
+                        <img src="img/icons/icon_search.svg" class="search-img" width="16" height="16">
+                    </label>
+                    <input class="search-input" id="search-input" type="text" name="search"
+                        placeholder="Поиск по сайту">
+                    <button class="search-button" type="submit">найти</button>
+                    <svg class="search-line" width="439" height="2" viewBox="0 0 440 2" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="440" y2="1" stroke="black" stroke-width="2" />
+                    </svg>
+                </form>
+
+                <ul class="profile-list">
+                    <li class="nav-action-item">
+                        <a class="nav-action-link link-user" href="#">
+                            <img src="img/icons/icon_user.svg" class="nav-action-img" width="13" height="14">Войти</a>
+                    </li>
+                </ul>
+                <ul class="nav-action-list">
+                    <li class="nav-action-item">
+                        <a class="nav-action-link link-chart" href="#">
+                            <img src="img/icons/icon_chart.svg" class="nav-action-img" width="14"
+                                height="14">Сравнить</a>
+                    </li>
+                    <li class="nav-action-item">
+                        <a class="nav-action-link " href="#">
+                            <img src="img/icons/icon_cart.svg" class="nav-action-img" width="10" height="10">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-bottom">
+                <div class="top-menu">
+                    <a class="nav-link nav-catalog-link" href="catalog.html">каталог товаров</a>
+                    <ul class="submenu-list">
+                        <li class="submenu-item item-a"><a class="catalog-link" href="catalog.html">Виртуальная
+                                реальность</a></li>
+                        <li class="submenu-item item-b"><a class="catalog-link" href="catalog.html">Моноподы для
+                                селфи</a></li>
+                        <li class="submenu-item item-c"><a class="catalog-link" href="catalog.html">Экшн-камеры</a></li>
+                        <li class="submenu-item item-d"><a class="catalog-link" href="catalog.html">Фитнес-браслеты</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#warranty">гарантия</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">контакты</a>
+                        <li class="submenu-item item-e"><a class="catalog-link" href="catalog.html">Умные часы</a></li>
+                        <li class="submenu-item item-f"><a class="catalog-link" href="catalog.html">Квадрокоптер</a>
                         </li>
                     </ul>
                 </div>
-              
-          </nav>
-     </header> 
-     <main class="main-section">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#delivery">доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#warranty">гарантия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">контакты</a>
+                    </li>
+                </ul>
+            </div>
 
-         <h1 class="none">Магазин Device</h1>
-          <section class="slider container">
-              <h2 class="none">Хиты продаж!</h2>
-              <div class="slider-inner">
-              <div class="slider-slides">
-              <div id="slide1" class="slide">
-                  <div class="slide-left">
-                      <img class="slide-img" src="img/slider/slider-1.png" alt="Палка для селфи" width="384" height="486">
-                  </div>
+        </nav>
+    </header>
+    <main class="main-section">
 
-                <div class="slide-right">
+        <h1 class="none">Магазин Device</h1>
+        <section class="slider container">
+            <h2 class="none">Хиты продаж!</h2>
+            <div class="slider-inner">
+                <div class="slider-slides">
+                    <div id="slide1" class="slide">
+                        <div class="slide-left">
+                            <img class="slide-img" src="img/slider/slider-1.png" alt="Палка для селфи" width="384"
+                                height="486">
+                        </div>
 
-                    <div class="slider-number">
-                        <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="7" fill="white"/>
-                        </svg>
-                        <p class="number-text">01</p>
+                        <div class="slide-right">
+
+                            <div class="slider-number">
+                                <svg width="100" height="7" viewBox="0 0 100 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="7" fill="white" />
+                                </svg>
+                                <p class="number-text">01</p>
+                            </div>
+                            <div class="slider-wrap">
+                                <h4 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h4>
+                                <p class="slider-text">Самая длинная палка для селфи доступна в нашем
+                                    магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+                                <div class="slider-buttons">
+                                    <a class="slider-link link-details" href="catalog.html">подробнее</a>
+                                    <div class="pagination">
+                                        <a class="pagination-link pagination-link1" href="#slide1">
+                                            <svg class="pagination-link-active" width="12" height="12"
+                                                viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                        <a class="pagination-link pagination-link2" href="#slide2">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                        <a class="pagination-link pagination-link3" href="#slide3">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class="properties">
+                                    <tr>
+                                        <td>8,5 м</td>
+                                        <td>5 кг</td>
+                                        <td>Карбон</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Длина палки</th>
+                                        <th>Вес палки</th>
+                                        <th>Материал</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="slider-wrap">
-                    <h4 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h4>
-                    <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                  
-                    <div class="slider-buttons">
-                        <a class="slider-link link-details" href="catalog.html">подробнее</a>
-                        <div class="pagination">
-                            <a class="pagination-link pagination-link1" href="#slide1">
-                                <svg class="pagination-link-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="5.5" stroke="black"/>
+
+                    <div id="slide2" class="slide">
+                        <div class="slide-left">
+                            <img class="slide-img" src="img/slider/slider-2.png" alt="Фитнес-браслет" width="345"
+                                height="485">
+                        </div>
+                        <div class="slide-right">
+                            <div class="slider-number">
+                                <svg width="100" height="7" viewBox="0 0 100 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="7" fill="white" />
                                 </svg>
-                            </a>
-                            <a class="pagination-link pagination-link2" href="#slide2">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                                </svg>
-                            </a>
-                            <a class="pagination-link pagination-link3" href="#slide3">
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                                </svg>
-                            </a>
+                                <p class="number-text">02</p>
+                            </div>
+                            <div class="slider-wrap">
+                                <h4 class="slider-title">Худеем правильно!</h4>
+                                <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                                    пропускать занятия и соблюдать диету.</p>
+                                <div class="slider-buttons">
+                                    <a class="slider-link link-details" href="catalog.html">подробнее</a>
+                                    <div class="pagination">
+                                        <a class="pagination-link pagination-link1" href="#slide1">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                        <a class="pagination-link pagination-link2" href="#slide2">
+                                            <svg class="pagination-link-active" width="12" height="12"
+                                                viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                        <a class="pagination-link pagination-link3" href="#slide3">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class="properties">
+                                    <tr>
+                                        <td>48 часов</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Без подзарядки</th>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <table class="properties">
-                          <tr>
-                              <td>8,5 м</td>
-                              <td>5 кг</td>
-                              <td>Карбон</td>
-                          </tr>
-                          <tr>
-                              <th>Длина палки</th>
-                              <th>Вес палки</th>
-                              <th>Материал</th>
-                          </tr>
-                    </table>
+
+                    <div id="slide3" class="slide">
+                        <div class="slide-left">
+                            <img class="slide-img" src="img/slider/slider-3.png" alt="Квадрокоптер" width="526"
+                                height="334">
+                        </div>
+                        <div class="slide-right">
+                            <div class="slider-number"><svg width="100" height="7" viewBox="0 0 100 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100" height="7" fill="white" />
+                                </svg>
+                                <p class="number-text">03</p>
+                            </div>
+                            <div class="slider-wrap">
+                                <h4 class="slider-title">Порхает как бабочка, жалит как пчела!</h4>
+                                <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                                    лазером, замаскированным под стандартную камеру.</p>
+                                <div class="slider-buttons">
+                                    <a class="slider-link link-details" href="catalog.html">подробнее</a>
+                                    <div class="pagination">
+                                        <a class="pagination-link" href="#slide1">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg></a>
+                                        <a class="pagination-link" href="#slide2">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg></a>
+                                        <a class="pagination-link pagination-link-active" href="#slide3">
+                                            <svg class="pagination-link-active" width="12" height="12"
+                                                viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="6" r="5.5" stroke="black" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <table class="properties">
+                                    <tr>
+                                        <td>800 м</td>
+                                        <td>50 м</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Дальность полета</th>
+                                        <th>Радиус поражения</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-              </div>
-  
-              <div id="slide2" class="slide">
-                  <div class="slide-left">
-                      <img class="slide-img" src="img/slider/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-                  </div>
-                  <div class="slide-right">
-                  <div class="slider-number">
-                  <svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="100" height="7" fill="white"/>
-                  </svg>
-                    <p class="number-text">02</p></div>
-                    <div class="slider-wrap">
-                  <h4 class="slider-title">Худеем правильно!</h4>
-                  <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                  <div class="slider-buttons">
-                      <a class="slider-link link-details" href="catalog.html">подробнее</a>
-                      <div class="pagination">
-                      <a class="pagination-link pagination-link1" href="#slide1">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                            </svg>
-                      </a>
-                      <a class="pagination-link pagination-link2" href="#slide2">
-                          <svg class="pagination-link-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                            </svg>
-                      </a>
-                      <a class="pagination-link pagination-link3" href="#slide3">
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                        </svg>
-                      </a>
-                      </div>
-                  </div>
-                       <table class="properties">
-                          <tr>
-                              <td>48 часов</td>
-                          </tr>
-                          <tr>
-                              <th>Без подзарядки</th>
-                          </tr>
-                      </table>
-                      </div>
-              </div>
-              </div>
-  
-              <div id="slide3" class="slide">
-                  <div class="slide-left">
-                      <img class="slide-img" src="img/slider/slider-3.png" alt="Квадрокоптер" width="526" height="334">
-                  </div>
-                  <div class="slide-right">
-                  <div class="slider-number"><svg width="100" height="7" viewBox="0 0 100 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="100" height="7" fill="white"/>
-                  </svg>
-                      <p class="number-text">03</p></div>
-                      <div class="slider-wrap">
-                      <h4 class="slider-title">Порхает как бабочка, жалит как пчела!</h4>
-                  <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <div class="slider-buttons">
-                      <a class="slider-link link-details" href="catalog.html">подробнее</a>
-                      <div class="pagination">
-                      <a class="pagination-link" href="#slide1">
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                          </svg></a>
-                      <a class="pagination-link" href="#slide2">
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                          </svg></a>
-                      <a class="pagination-link pagination-link-active" href="#slide3">
-                          <svg class="pagination-link-active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="6" cy="6" r="5.5" stroke="black"/>
-                          </svg></a>
-                      </div>
-                  </div>
-                  <table class="properties">
-                          <tr>
-                              <td>800 м</td>
-                              <td>50 м</td>
-                          </tr>
-                          <tr>
-                              <th>Дальность полета</th>
-                              <th>Радиус поражения</th>
-                          </tr>
-                      </table>
-                      </div>
-                  </div>
-              </div>
-              </div>
-              </div>
-          </section>
-
-          
-          
-          <section class="chapters container">
-             <h2 class="none">Категории товаров</h2>
-              <ul class="chapter-list">
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-1.svg" width="97" height="55"></p>
-                      <h3>Виртуальная реальность</h3>
-                  </a>
-              </li>
-  
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-2.svg" width="86" height="117"></p>
-                      <h3>Моноподы<br> для селфи</h3>
-                  </a>
-              </li>
-  
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-3.svg" width="71" height="87"></p>
-                      <h3>Экшн-камеры</h3>
-                  </a>
-              </li>
-  
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-4.svg" width="107" height="65"></p>
-                      <h3>Фитнес-браслеты</h3>
-                  </a>
-              </li>
-  
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-5.svg" width="56" height="98"></p>
-                      <h3>Умные часы</h3>
-                  </a>
-              </li>
-  
-              <li class="chapter-item">
-                  <a class="chapter-link" href="catalog.html">
-                      <p class="chapter-img"><img src="img/popular/popular-6.svg" width="132" height="69"></p>
-                      <h3>Квадрокоптеры</h3>
-                  </a>
-              </li>
-          </ul>
-          </section>
-  
-          <section class="advantages">
-           <div class="advantages-container container">
-            <div class="advantage-links">
-                <a class="advantage-link advantage-link-active" href="#delivery"><div class="advantage-link-container">Доставка</div></a>
-                <a class="advantage-link" href="#warranty"><div class="advantage-link-container">Гарантия</div></a>
-                <a class="advantage-link" href="#credit"><div class="advantage-link-container">Кредит</div></a>
-                <div class="advantage-rect"></div>
             </div>
-             <div class="advantage-services">
-             <div class="advantage-content">
-              <div class="advantage advantage-delivery" id="delivery">
-                  <h2>Доставка</h2>
-                  <p class="advantage-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
-  
-              <div class="advantage advantage-warranty" id="warranty">
-                  <h2>Гарантия</h2>
-                  <p class="advantage-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              </div>
-  
-              <div class="advantage advantage-credit" id="credit">
-                  <h2>Кредит</h2>
-                  <p class="advantage-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </div>
-              </div>
-              </div>
-              </div>
-          </section>
-          <section class="brends container">
-              <h2 class="none">Любимые бренды</h2>
-              <a class="brend-link" href="#"><img src="img/brends/logo-1.png" width="260" height="100" alt="brend dji"></a>
-              <a class="brend-link" href="#"><img src="img/brends/logo-3.png" width="260" height="100" alt="brend SPgadgets"></a>
-              <a class="brend-link" href="#"><img src="img/brends/logo-4.png" width="260" height="100" alt="brend gopro"></a>
-              <a class="brend-link" href="#"><img src="img/brends/logo-2.png" width="260" height="100" alt="brend vive"></a>
-          </section>
-  
-          <section class="information container">
-              <div class="info" id="about">
-                  <div class="rectangle-black"></div>
-                  <h2>О нас</h2>
-                  <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                  <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                  <ul class="info-list">
-                      <li class="info-item">Деловые линии</li>
-                      <li class="info-item">Автотрейдинг</li>
-                      <li class="info-item">ЖелДорЭкспедиция</li>
-                  </ul>
-                  <a class="info-details link-details" href="blank.html">подробнее о нас</a>
-              </div>
-  
-              <div class="info" id="contacts">
-                  <div class="rectangle-black"></div>
-                  <h2>Контакты</h2>
-                  <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                      <!-- карта в модальном окне -->
-                  <a class="map-link" href="https://yandex.ru/maps/?um=constructor%3A0f38cbfa6daa32924978b7d7535a2a2a3429eadb33dad07c6a43eb1ac3338e23&source=constructorLink">
-                      <img src="img/map.png" width="560" height="222" alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
-                  </a>
-                  <a class="info-form-link link-details" href="blank.html">напишите нам</a>
-              </div>
-          </section>
-     </main>
-     
-     
-     <footer class="footer-main"> 
-         <div class="footer-container container">
-      <ul class="footer-action-list">
-          <li class="footer-action-item"><a class="footer-action-link" href="#">
-              <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
-          <li class="footer-action-item"><a class="footer-action-link" href="#">  
-              <img src="img/icons/icon_chart.svg" width="14" height="14">Сравнить</a></li>
-          <li class="footer-action-item"><a class="footer-action-link" href="#">
-              <img src="img/icons/icon_cart.svg" width="10" height="10"> Корзина</a></li>
-      </ul>
-  <section class="footer-content"> 
-      <h2 class="none">Контакты</h2>    
-  <div class="footer-left">
-      <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
-      <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
-      <div class="rectangle-yellow"></div>
-  </div>
-  <div class="footer-center">
-      <ul class="footer-nav-list">
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#delivery">доставка</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#warranty">гарантия</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
-      </ul>
-      <ul class="social-list">
-          <li class="social-item">
-              <a class="social-link" href="#">
-              <img src="img/social/facebook.svg" width="32" height="32" alt="facebook"></a></li>
-          <li class="social-item">
-              <a class="social-link" href="#">
-              <img src="img/social/insta.svg" width="32" height="32" alt="instagram"></a></li>
-          <li class="social-item">
-              <a class="social-link" href="#">
-              <img src="img/social/twit.svg" width="32" height="32" alt="twitter"></a></li>
-      </ul>
-  </div>
-  <div class="footer-right">
-      <p class="footer-text">Тел.: <a class="tel-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
-      <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="education-logo" width="115" height="33" src="img/logo_htmlacademy.svg" alt="html academy"></a>
-  </div>
-  </section> 
-    </div> 
-     </footer>
-     
-<!--
+        </section>
+
+
+
+        <section class="chapters container">
+            <h2 class="none">Категории товаров</h2>
+            <ul class="chapter-list">
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-1.svg" width="97" height="55"></p>
+                        <h3>Виртуальная реальность</h3>
+                    </a>
+                </li>
+
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-2.svg" width="86" height="117"></p>
+                        <h3>Моноподы<br> для селфи</h3>
+                    </a>
+                </li>
+
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-3.svg" width="71" height="87"></p>
+                        <h3>Экшн-камеры</h3>
+                    </a>
+                </li>
+
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-4.svg" width="107" height="65"></p>
+                        <h3>Фитнес-браслеты</h3>
+                    </a>
+                </li>
+
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-5.svg" width="56" height="98"></p>
+                        <h3>Умные часы</h3>
+                    </a>
+                </li>
+
+                <li class="chapter-item">
+                    <a class="chapter-link" href="catalog.html">
+                        <p class="chapter-img"><img src="img/popular/popular-6.svg" width="132" height="69"></p>
+                        <h3>Квадрокоптеры</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages-container container">
+                <div class="advantage-links">
+                    <a class="advantage-link advantage-link-active" href="#delivery">
+                        <div class="advantage-link-container">Доставка</div>
+                    </a>
+                    <a class="advantage-link" href="#warranty">
+                        <div class="advantage-link-container">Гарантия</div>
+                    </a>
+                    <a class="advantage-link" href="#credit">
+                        <div class="advantage-link-container">Кредит</div>
+                    </a>
+                    <div class="advantage-rect"></div>
+                </div>
+                <div class="advantage-services">
+                    <div class="advantage-content">
+                        <div class="advantage advantage-delivery" id="delivery">
+                            <h2>Доставка</h2>
+                            <p class="advantage-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+
+                        <div class="advantage advantage-warranty" id="warranty">
+                            <h2>Гарантия</h2>
+                            <p class="advantage-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                        </div>
+
+                        <div class="advantage advantage-credit" id="credit">
+                            <h2>Кредит</h2>
+                            <p class="advantage-text">Залезть в долговую яму стало проще! Кредитные консультанты
+                                подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
+                                разумеется.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brends container">
+            <h2 class="none">Любимые бренды</h2>
+            <a class="brend-link" href="#"><img src="img/brends/logo-1.png" width="260" height="100"
+                    alt="brend dji"></a>
+            <a class="brend-link" href="#"><img src="img/brends/logo-3.png" width="260" height="100"
+                    alt="brend SPgadgets"></a>
+            <a class="brend-link" href="#"><img src="img/brends/logo-4.png" width="260" height="100"
+                    alt="brend gopro"></a>
+            <a class="brend-link" href="#"><img src="img/brends/logo-2.png" width="260" height="100"
+                    alt="brend vive"></a>
+        </section>
+
+        <section class="information container">
+            <div class="info" id="about">
+                <div class="rectangle-black"></div>
+                <h2>О нас</h2>
+                <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+                </p>
+                <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+                    многими транспортными компаниями:</p>
+                <ul class="info-list">
+                    <li class="info-item">Деловые линии</li>
+                    <li class="info-item">Автотрейдинг</li>
+                    <li class="info-item">ЖелДорЭкспедиция</li>
+                </ul>
+                <a class="info-details link-details" href="blank.html">подробнее о нас</a>
+            </div>
+
+            <div class="info" id="contacts">
+                <div class="rectangle-black"></div>
+                <h2>Контакты</h2>
+                <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+                    работоспособность покупки. Всякое бывает.</p>
+                <!-- карта в модальном окне -->
+                <a class="map-link"
+                    href="https://yandex.ru/maps/?um=constructor%3A0f38cbfa6daa32924978b7d7535a2a2a3429eadb33dad07c6a43eb1ac3338e23&source=constructorLink">
+                    <img src="img/map.png" width="560" height="222"
+                        alt="Санкт-Петербург, набережная реки Карповки, 5, литера П">
+                </a>
+                <a class="info-form-link link-details" href="blank.html">напишите нам</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer-main">
+        <div class="footer-container container">
+            <ul class="footer-action-list">
+                <li class="footer-action-item"><a class="footer-action-link" href="#">
+                        <img src="img/icons/icon_user.svg" width="13" height="14">Войти</a></li>
+                <li class="footer-action-item"><a class="footer-action-link" href="#">
+                        <img src="img/icons/icon_chart.svg" width="14" height="14">Сравнить</a></li>
+                <li class="footer-action-item"><a class="footer-action-link" href="#">
+                        <img src="img/icons/icon_cart.svg" width="10" height="10"> Корзина</a></li>
+            </ul>
+            <section class="footer-content">
+                <h2 class="none">Контакты</h2>
+                <div class="footer-left">
+                    <a class="footer-logo-link" href="#"><img class="logo-footer" src="img/logo.svg" width="163"
+                            height="35" alt="Логотип магазина Девайс"></a>
+                    <p class="footer-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+                    <div class="rectangle-yellow"></div>
+                </div>
+                <div class="footer-center">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#delivery">доставка</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#warranty">гарантия</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#contacts">контакты</a></li>
+                    </ul>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a class="social-link" href="#">
+                                <img src="img/social/facebook.svg" width="32" height="32" alt="facebook"></a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="#">
+                                <img src="img/social/insta.svg" width="32" height="32" alt="instagram"></a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="#">
+                                <img src="img/social/twit.svg" width="32" height="32" alt="twitter"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-text">Тел.: <a class="tel-link" href="tel:+78005558628">+7 800 555-86-28</a></p>
+                    <a class="education-link" href="https://htmlacademy.ru/intensive/htmlcss"><img
+                            class="education-logo" width="115" height="33" src="img/logo_htmlacademy.svg"
+                            alt="html academy"></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <!--
 <section class="modal modal-map">
   <h2 class="none">Как до нас добраться</h2>
  
@@ -401,7 +459,8 @@
                   <button type="submit" class="letter-button link-details">отправить</button>
               </form></section>
 -->
-  
- 
-  </body>
+
+
+</body>
+
 </html>
