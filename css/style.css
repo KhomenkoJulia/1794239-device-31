@@ -1,4 +1,4 @@
-:root {
+:root{
     --basic-black: #000000;
     --basic-white: #ffffff;
     --basic-extra-dark: #363636;
@@ -12,42 +12,41 @@
     --special-rose: #f6dada;
     --special-opacity: rgba(255, 255, 255, 0);
 }
-
-@font-face {
-    font-family: "Gilroy"; 
+@font-face{
+    font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold.woff") format("woff"),
     url("../fonts/gilroyextrabold.woff2") format("woff2");
-    font-style: normal;  
-    font-weight: 800; 
+    font-style: normal;
+    font-weight: 800;
 }
-@font-face {
-    font-family: "Gilroy"; 
+@font-face{
+    font-family: "Gilroy";
     src: url("../fonts/gilroylight.woff") format("woff"),
     url("../fonts/gilroylight.woff2") format("woff2");
-    font-style: normal; 
-    font-weight: 300; 
+    font-style: normal;
+    font-weight: 300;
 }
-@font-face {
-    font-family: "Open Sans"; 
+@font-face{
+    font-family: "Open Sans";
     src: url("../fonts/opensans.woff") format("woff"),
     url("../fonts/opensans.woff2") format("woff2");
-    font-style: normal; 
-    font-weight: 400; 
+    font-style: normal;
+    font-weight: 400;
 }
-@font-face {
-    font-family: "Open Sans"; 
+@font-face{
+    font-family: "Open Sans";
     src: url("../fonts/opensanslight.woff") format("woff"),
     url("../fonts/opensanslight.woff2") format("woff2");
-    font-style: normal; 
-    font-weight: 300; 
+    font-style: normal;
+    font-weight: 300;
 }
-.page {
+.page{
     height: 100%;
 }
-.page-body {
-    font-family: "Open Sans", "Roboto", sans-serif; 
+.page-body{
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-size: 15px;
-    font-weight: 300; 
+    font-weight: 300;
     color: var(--basic-black);
     background-color: var(--basic-white);
     margin: 0 auto;
@@ -58,14 +57,14 @@
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
-a {
+a{
     text-decoration: none;
     color: var(--basic-black);
 }
-img {
+img{
     display: block;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 section, div, ul, form {
     outline: 1px solid red;
@@ -75,14 +74,14 @@ section, div, ul, form {
     position: absolute;
     top: -1000px;
 }
-.container {
+.container{
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 20px;
     outline: 2px solid green;
 }
-.header-main {
+.header-main{
     background: var(--basic-light-yellow);
     margin-top: 40px;
     padding: 44px 80px 146px;
@@ -97,7 +96,7 @@ section, div, ul, form {
 .logo-link:active{
     opacity: .3;
 }
-.logo {
+.logo{
     width: 163px;
     height: 35px;
 }
@@ -109,7 +108,7 @@ section, div, ul, form {
     display: flex;
     justify-content: space-between;
 }
-.search-form {
+.search-form{
     margin-top: -15px;
     padding: 0;
     width: 440px;
@@ -207,8 +206,8 @@ section, div, ul, form {
 }
 .top-menu:hover .submenu-list{
     opacity: 1;
-} 
-.top-menu::after {
+}
+.top-menu::after{
     content: "+";
     font-size: 30px;
     font-weight: 400;
@@ -234,7 +233,7 @@ section, div, ul, form {
     row-gap: 20px;
     grid-template-columns: max-content max-content max-content;
     grid-template-rows: min-content min-content min-content;
-    opacity: 0; 
+    opacity: 0;
 }
 .item-a{
     grid-area: a;
@@ -253,9 +252,6 @@ section, div, ul, form {
 }
 .item-f{
     grid-area: f;
-}
-.submenu-item{
-  
 }
 .catalog-link{
     font-family: "Open Sans", "Roboto", sans-serif;
@@ -285,17 +281,14 @@ section, div, ul, form {
 .nav-item:nth-child(2){
     margin-right: 111px;
 }
-
-
 .slider{
     margin-top: -102px;
     position: relative;
 }
-.slider-inner {
+.slider-inner{
   overflow: hidden;
 }
-
-.slider-slides {
+.slider-slides{
   width: 300%;
   transition: transform 0.8s ease;
   display: flex;
@@ -330,20 +323,15 @@ section, div, ul, form {
     font-size: 47px;
     line-height: 58px;
     z-index: 2;
-    
 }
 .slider-text{
     line-height: 20px;
     margin: 0;
-    
 }
 .slider-buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.slider-link {
-    
 }
 .link-details{
     font-family: "Gilroy", "Arial", sans-serif;
@@ -365,19 +353,12 @@ section, div, ul, form {
 .link-details:active{
     opacity: .3;
 }
-
-.pagination{
-    
-}
 .pagination-link:nth-of-type(2){
     margin-left: 18px;
     margin-right: 18px;
 }
 .pagination-link-active{
     fill: black;
-}
-.properties{
-    
 }
 .properties td{
     font-family: "Gilroy", "Arial", sans-serif;
@@ -415,10 +396,7 @@ section, div, ul, form {
 .chapters{
     width: 1160px;
     margin: 106px auto 69px;
-    
-}
-.chapters img{
-        
+
 }
 .chapter-list{
     list-style-type: none;
@@ -453,11 +431,8 @@ section, div, ul, form {
     justify-content: center;
     align-items: center;
 }
-
-
 .advantages{
-    background-image: linear-gradient(to bottom, var(--basic-white) 115px, var(--basic-light-grey) 115px); 
-    
+    background-image: linear-gradient(to bottom, var(--basic-white) 115px, var(--basic-light-grey) 115px);
 }
 .advantages-container{
     display: flex;
@@ -542,7 +517,7 @@ h2 {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;
-    letter-spacing: 0.2em; 
+    letter-spacing: 0.2em;
 }
 .brends{
     margin: 90px auto;
@@ -552,7 +527,7 @@ h2 {
 .brend-link > img {
     filter: saturate(0);
 }
-.brend-link:hover > img {
+.brend-link:hover > img{
     filter: saturate(100%);
 }
 .information{
@@ -572,7 +547,7 @@ h2 {
 .info-text{
      line-height: 28px;
 }
-.rectangle-black {
+.rectangle-black{
 	width: 80px;
     height: 7px;
     background: var(--basic-black);
@@ -615,7 +590,7 @@ h2 {
 }
 .footer-action-item img{
     margin-right: 11px;
-    
+
 }
 .footer-action-link{
     color: var(--basic-white);
@@ -624,7 +599,7 @@ h2 {
 .footer-action-link:hover{
     opacity: 1;
 }
-.footer-action-link:active {
+.footer-action-link:active{
      opacity: 3;
 }
 .footer-logo-link:hover{
@@ -724,23 +699,20 @@ h2 {
     border: none;
     position: relative;
 }
-
 .modal-close::before,
-.modal-close::after {
+.modal-close::after{
     position: absolute;
     content: '';
     width: 50%;
-    height: 4px; 
+    height: 4px;
     background-color: var(--basic-white);
     top: 45%;
     left: 25%;
 }
-
-.modal-close::before {
+.modal-close::before{
     transform: rotate(45deg);
 }
-
-.modal-close::after {
+.modal-close::after{
     transform: rotate(-45deg);
 }
 .modal-close:hover{
@@ -765,7 +737,6 @@ h2 {
     font-weight: 800;
     font-size: 18px;
     color: var(--basic-black);
-
 }
 .letter-input{
     background: var(--basic-light-grey);
@@ -802,14 +773,13 @@ h2 {
     box-sizing: border-box;
     border: none;
 }
-.letter-textarea::placeholder, 
+.letter-textarea::placeholder,
 .letter-input::placeholder{
     font-family: "Open Sans", "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: var(--basic-black);
 }
-
 .letter-button{
     margin-top: 30px;
     border: none;
@@ -820,7 +790,6 @@ h2 {
     background: var(--basic-black);
     color: var(--basic-white);
 }
-
 /*каталог*/
 .main-catalog{
     font-size: 14px;
@@ -828,9 +797,9 @@ h2 {
 .title-page{
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
-    font-size: 47px; 
+    font-size: 47px;
     padding-left: 60px;
-	padding-right: 60px; 
+	padding-right: 60px;
 }
 .breadcrumbs-list{
     list-style-type: none;
@@ -860,16 +829,16 @@ h2 {
 .breadcrumbs-link:active{
     opacity: .1;
 }
-.catalog {
+.catalog{
     background: var(--basic-light-grey);
 }
-.catalog-layout {
+.catalog-layout{
 	display: grid;
 	grid-template-columns: 1fr 760px;
 	grid-template-rows: repeat(3, min-content);
 	gap: 70px;
 }
-.catalog-layout::before {
+.catalog-layout::before{
 	content: "";
 	z-index: 0;
 	grid-column: 1 / 2;
@@ -878,7 +847,7 @@ h2 {
 	margin-left: calc(100% - 100vw);
 	background-color: var(--basic-dark-grey);
 }
-.catalog-layout::after {
+.catalog-layout::after{
 	content: "";
 	z-index: 0;
 	grid-column: -2 / -1;
@@ -901,7 +870,7 @@ h2 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-.filter-form {
+.filter-form{
 	grid-area: 2 / 1 / -1 / 2;
 	padding: 0px 70px 0px 60px;
 }
@@ -930,7 +899,7 @@ h2 {
     box-sizing: border-box;
     background-color: var(--special-opacity);
 }
-.sorting {
+.sorting{
     display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1034,7 +1003,7 @@ h2 {
     grid-template-columns: 1fr max-content;
     padding-top: 30px;
     font-family: "Gilroy", "Arial", sans-serif;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
 }
 .card-title{
     font-weight: 800;
