@@ -353,13 +353,16 @@ form {
   overflow: hidden;
 }
 
-.slider-slides {
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 300%;
   transition: transform 0.8s ease;
   display: flex;
 }
 
-.slide {
+.slide-item {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
@@ -541,8 +544,11 @@ form {
   flex-grow: 1;
 }
 
-.advantage-content {
+.advantage-list {
   height: 300%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantage {
