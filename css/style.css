@@ -413,35 +413,29 @@ img {
   margin-right: 18px;
 }
 
-.pagination-link-active {
-  fill: black;
+.properties-container{
+  display: flex;
+  column-gap: 64px;
 }
 
 .properties{
+  margin: 0;
+  padding: 0;
   display: flex;
-
-}
-
-.properties > tr:last-of-type{
-  order: -1;
-}
-
-.properties td {
+  flex-direction: column-reverse;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
+  letter-spacing: 0.1em;
+  row-gap: 15px;
+}
+
+.properties dd {
+  margin: 0;
   font-size: 36px;
-  letter-spacing: 0.1em;
-  padding-right: 64px;
-  padding-bottom: 15px;
-  text-align: left;
 }
 
-.properties th {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 300;
+.properties dt {
   font-size: 13px;
-  letter-spacing: 0.1em;
-  text-align: left;
 }
 
 .chapters {
@@ -788,6 +782,23 @@ h2 {
   display: flex;
   justify-content: center;
   column-gap: 20px;
+}
+.facebook::after {
+  content: url(../img/social/facebook.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.instagram::after {
+  content: url(../img/social/insta.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.twitter::after{
+  content: url(../img/social/twit.svg);
+  width: 32px;
+  height: 32px;
 }
 
 .social-link {
