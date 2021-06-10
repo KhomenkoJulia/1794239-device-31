@@ -79,19 +79,20 @@
   <main class="main-section">
     <h1 class="visually-hidden">Магазин Device</h1>
     <section class="slider container">
+      <div class="pagination">
+        <a class="pagination-link pagination-link1" href="#slide1">
+          Слайд 1
+        </a>
+        <a class="pagination-link pagination-link2" href="#slide2">
+          Слайд 2
+        </a>
+        <a class="pagination-link pagination-link3" href="#slide3">
+          Слайд 3
+        </a>
+      </div>
       <h2 class="visually-hidden">Хиты продаж!</h2>
       <div class="slider-inner">
-        <div class="pagination">
-          <a class="pagination-link pagination-link1" href="#slide1">
-            Слайд 1
-          </a>
-          <a class="pagination-link pagination-link2" href="#slide2">
-            Слайд 2
-          </a>
-          <a class="pagination-link pagination-link3" href="#slide3">
-            Слайд 3
-          </a>
-        </div>
+
         <ol class="slider-list">
           <li id="slide1" class="slide-item">
             <div class="slide-right">
@@ -101,7 +102,7 @@
                   Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь,
                   Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
-                <p>
+                <p class="slider-button">
                   <a class="slider-link link-details" href="catalog.html">Подробнее</a>
                 </p>
                 <table class="properties">
@@ -130,7 +131,7 @@
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                   соблюдать диету.
                 </p>
-                <p>
+                <p class="slider-button">
                   <a class="slider-link link-details" href="catalog.html">Подробнее</a>
                 </p>
                 <table class="properties">
@@ -154,7 +155,7 @@
                 <p class="slider-text">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <p>
+                <p class="slider-button">
                   <a class="slider-link link-details" href="catalog.html">Подробнее</a>
                 </p>
                 <table class="properties">
@@ -180,22 +181,22 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="chapter-list">
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Виртуальная реальность</a>
+          <a class="chapter-link chapter-link1" href="catalog.html">Виртуальная реальность</a>
         </li>
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Моноподы<br> для селфи</a>
+          <a class="chapter-link chapter-link2" href="catalog.html">Моноподы<br> для селфи</a>
         </li>
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Экшн-камеры</a>
+          <a class="chapter-link chapter-link3" href="catalog.html">Экшн-камеры</a>
         </li>
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Фитнес-браслеты</a>
+          <a class="chapter-link chapter-link4" href="catalog.html">Фитнес-браслеты</a>
         </li>
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Умные часы</a>
+          <a class="chapter-link chapter-link5" href="catalog.html">Умные часы</a>
         </li>
         <li class="chapter-item">
-          <a class="chapter-link" href="catalog.html">Квадрокоптеры</a>
+          <a class="chapter-link chapter-link6" href="catalog.html">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
@@ -291,10 +292,13 @@
   </main>
   <footer class="footer-main">
     <div class="footer-container container">
-      <ul class="footer-action-list">
+      <div class="footer-navigation">
+      <ul class="footer-profile-list">
         <li class="footer-action-item">
-          <a class="footer-action-link" href="#">Войти</a>
+          <a class="footer-action-link link-user" href="#">Войти</a>
         </li>
+      </ul>
+      <ul class="footer-action-list">
         <li class="footer-action-item">
           <a class="footer-action-link" href="#">Сравнить</a>
         </li>
@@ -302,6 +306,7 @@
           <a class="footer-action-link" href="#">Корзина</a>
         </li>
       </ul>
+    </div>
       <section class="footer-content">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="footer-left">

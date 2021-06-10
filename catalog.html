@@ -16,7 +16,7 @@
 </head>
 
 <body class="page-body">
-  <header class="header-main header-catalog container">
+  <header class="header-main container">
     <a class="logo-link" href="index.html">
       <img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
     </a>
@@ -27,57 +27,60 @@
           <input class="search-input" id="search-input" type="text" name="search">
           <button class="search-button" type="submit">Найти</button>
         </form>
+        <ul class="profile-list">
+          <li class="nav-action-item">
+            <a class="nav-action-link name-user" href="#">Валентин Петухов</a>
+          </li>
+          <li class="nav-action-item">
+            <a class="nav-action-link link-user link-user-active" href="#">Выйти</a>
+          </li>
+        </ul>
         <ul class="nav-action-list">
           <li class="nav-action-item">
-            <a class="nav-action-link profile-link" href="#">Валентин Петухов</a>
-            <a class="nav-action-link exit-link" href="#">Выйти</a>
+            <a class="nav-action-link link-chart" href="#">Сравнить</a>
           </li>
           <li class="nav-action-item">
-            <a class="nav-action-link" href="#">Сравнить</a>
-          </li>
-          <li class="nav-action-item">
-            <a class="nav-action-link" href="#">Корзина</a>
+            <a class="nav-action-link " href="#">Корзина</a>
           </li>
         </ul>
       </div>
-      <div class="nav-bottom">
-        <div class="top-menu">
-          <a class="nav-link" href="catalog.html">каталог товаров</a>
+      <ul class="nav-list">
+        <li class="nav-item top-menu">
+          <a class="nav-link nav-catalog-link" href="catalog.html">Каталог товаров</a>
           <ul class="submenu-list">
-            <li class="submenu-item">
+            <li class="submenu-item item-a">
               <a class="catalog-link" href="catalog.html">Виртуальная реальность</a>
             </li>
-            <li class="submenu-item">
+            <li class="submenu-item item-b">
               <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
             </li>
-            <li class="submenu-item">
+            <li class="submenu-item item-c">
               <a class="catalog-link" href="catalog.html">Экшн-камеры</a>
             </li>
-            <li class="submenu-item">
+            <li class="submenu-item item-d">
               <a class="catalog-link" href="catalog.html">Фитнес-браслеты</a>
             </li>
-            <li class="submenu-item">
+            <li class="submenu-item item-e">
               <a class="catalog-link" href="catalog.html">Умные часы</a>
             </li>
-            <li class="submenu-item">
+            <li class="submenu-item item-f">
               <a class="catalog-link" href="catalog.html">Квадрокоптер</a>
             </li>
           </ul>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#delivery">Доставка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#warranty">Гарантия</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#contacts">Контакты</a>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#delivery">Доставка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#warranty">Гарантия</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contacts">Контакты</a>
+        </li>
+      </ul>
     </nav>
   </header>
+
   <main class="main-catalog">
     <div class="breadcrumbs container">
       <h1 class="title-page">Моноподы для селфи</h1>
@@ -101,10 +104,14 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" oninput="priceoutput.value=pricecount.value">
           <fieldset class="filter-fieldset">
             <legend>Стоимость</legend>
-            <input type="range" name="price" min="0" max="8000" step="100">
-            <output name="sum">[от 0 до 5000]</output>
-            <input type="range" name="price" min="0" max="8000" step="100">
-            <output name="sum">[от 1000 до 8000]</output>
+            <p>
+              <input type="range" name="price" min="0" max="8000" step="100">
+              <output name="sum">[от 0 до 5000]</output>
+            </p>
+            <p>
+              <input type="range" name="price" min="0" max="8000" step="100">
+              <output name="sum">[от 1000 до 8000]</output>
+            </p>
           </fieldset>
           <fieldset class="filter-fieldset">
             <legend>Цвет</legend>
@@ -144,12 +151,12 @@
           <fieldset class="filter-fieldset">
             <legend>Bluetooth</legend>
             <p class="filter-p">
-              <label for="bluetooth-true">Есть</label>
               <input id="bluetooth-true" type="radio" name="bluetooth" value="Есть" checked>
+              <label for="bluetooth-true">Есть</label>
             </p>
             <p class="filter-p">
-              <label for="bluetooth-false">Нет</label>
               <input id="bluetooth-false" type="radio" name="bluetooth" value="Нет">
+              <label for="bluetooth-false">Нет</label>
             </p>
           </fieldset>
           <button class="filter-button link-details" type="submit">Показать</button>
@@ -256,40 +263,47 @@
       </div>
     </div>
   </main>
-  <footer class=footer-main>
+  <footer class="footer-main">
     <div class="footer-container container">
-      <ul class="footer-action-list">
-        <li class="footer-action-item">
-          <a class="footer-action-link" href="#">Войти</a>
-        </li>
-        <li class="footer-action-item">
-          <a class="footer-action-link" href="#">Сравнить</a>
-        </li>
-        <li class="footer-action-item">
-          <a class="footer-action-link" href="#">Корзина</a>
-        </li>
-      </ul>
+      <div class="footer-navigation">
+        <ul class="footer-profile-list">
+          <li class="footer-action-item">
+            <a class="footer-action-link name-user" href="#">Валентин Петухов</a>
+          </li>
+          <li class="footer-action-item">
+            <a class="footer-action-link link-user" href="#">Выйти</a>
+          </li>
+        </ul>
+        <ul class="footer-action-list">
+          <li class="footer-action-item">
+            <a class="footer-action-link" href="#">Сравнить</a>
+          </li>
+          <li class="footer-action-item">
+            <a class="footer-action-link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
       <section class="footer-content">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="footer-left">
-          <a class="footer-logo-link" href="index.html">
+          <a class="footer-logo-link" href="#">
             <img class="logo-footer" src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
           </a>
           <p class="footer-text">
             Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.
           </p>
-          <div id="rectangle-yellow"></div>
+          <div class="rectangle-yellow"></div>
         </div>
         <div class="footer-center">
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="index.html#delivery">Доставка</a>
+              <a class="footer-nav-link" href="#delivery">Доставка</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="index.html#warranty">Гарантия</a>
+              <a class="footer-nav-link" href="#warranty">Гарантия</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="index.html#contacts">Контакты</a>
+              <a class="footer-nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
           <ul class="social-list">
@@ -321,6 +335,7 @@
       </section>
     </div>
   </footer>
+
 </body>
 
 </html>
