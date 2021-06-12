@@ -584,7 +584,9 @@ img {
   color: var(--basic-white);
 }
 
-.advantage-rect {
+.advantage-rect::after {
+  content: '';
+  display: block;
   width: 7px;
   height: 320px;
   background: var(--basic-black);
@@ -653,7 +655,9 @@ h2 {
   line-height: 28px;
 }
 
-.rectangle-black {
+.rectangle-black::before {
+  content: '';
+  display: block;
   width: 80px;
   height: 7px;
   background: var(--basic-black);
@@ -836,10 +840,13 @@ h2 {
   opacity: 0.3;
 }
 
-.rectangle-yellow {
-width: 80px;
+.rectangle-yellow::after {
+  content: '';
+  display: block;
+  width: 80px;
   height: 7px;
   background: var(--basic-yellow);
+  margin-top: 50px;
 }
 
 .modal-letter {
@@ -976,6 +983,10 @@ width: 80px;
   font-size: 14px;
 }
 
+.header-main-catalog{
+  padding-bottom: 50px;
+}
+
 .link-user-active {
   opacity: 0.3;
 }
@@ -1031,37 +1042,37 @@ width: 80px;
 }
 
 .catalog-layout {
-display: grid;
-grid-template-columns: 1fr 760px;
-grid-template-rows: repeat(3, min-content);
-gap: 70px;
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  grid-template-rows: repeat(3, min-content);
+  gap: 70px;
 }
 
 .catalog-layout::before {
-content: '';
-z-index: 0;
-grid-column: 1 / 2;
-grid-row: 1 / 2;
-margin-left: -100vw;
-background-color: var(--basic-dark-grey);
+  content: '';
+  z-index: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: -100vw;
+  background-color: var(--basic-dark-grey);
 }
 
 .catalog-layout::after {
-content: '';
-z-index: 0;
-grid-column: -2 / -1;
-grid-row: 2 / 4;
-width: 100vw;
-margin-left: -100vw;
-background-color: var(--basic-white);
-transform: translatex(-100vw);
-box-shadow: 200vw 0px 0px 70px var(--basic-white);
+  content: '';
+  z-index: 0;
+  grid-column: -2 / -1;
+  grid-row: 2 / 4;
+  width: 100vw;
+  margin-left: -100vw;
+  background-color: var(--basic-white);
+  transform: translatex(-100vw);
+  box-shadow: 200vw 0px 0px 70px var(--basic-white);
 }
 
 .catalog-filter-title {
   z-index: 1;
-grid-area: 1 / 1;
-padding: 12px 70px 12px 60px;
+  grid-area: 1 / 1;
+  padding: 12px 70px 12px 60px;
 }
 
 .filter-title {
@@ -1073,8 +1084,8 @@ padding: 12px 70px 12px 60px;
 }
 
 .filter-form {
-grid-area: 2 / 1 / -1 / 2;
-padding: 0px 70px 0px 60px;
+  grid-area: 2 / 1 / -1 / 2;
+  padding: 0px 70px 0px 60px;
 }
 
 .filter-fieldset {
