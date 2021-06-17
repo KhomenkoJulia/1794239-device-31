@@ -129,10 +129,11 @@ img {
   margin-right: 100px;
   padding: 0;
   width: 440px;
+  display: flex;
 }
 
 .search-button {
-  display: inline-block;
+  display: flex;
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   width: 84px;
@@ -149,7 +150,7 @@ img {
   outline: none;
   background: var(--special-opacity);
   opacity: 0.3;
-  width: 306px;
+  width: 200px;
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   height: 40px;
@@ -158,6 +159,15 @@ img {
 .search-input:hover {
   opacity: 0.6;
   outline: none;
+}
+
+.search-input + label::before {
+  content: "Поиск по сайту";
+  background-image: url(../img/icons/icon_search.svg);
+  background-repeat: no-repeat;
+  margin-right: 11px;
+  width: 13px;
+  height: 14px;
 }
 
 .search-input:focus ~ .search-button {
@@ -448,7 +458,7 @@ img {
   display: grid;
   margin-top: 100px;
   min-height: 506px;
-  grid-template-rows: 1fr 1fr min-content min-content;
+  grid-template-rows: min-content auto min-content min-content;
   row-gap: 30px;
 }
 
@@ -1206,6 +1216,8 @@ h2 {
 .filter-fieldset {
   border: none;
   max-width: 200px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 37px;
 }
 
@@ -1219,10 +1231,99 @@ h2 {
   width: 200px;
 }
 
+.range-controls {
+  position: relative;
+  margin-bottom: 8px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-black);
+  opacity: 0.2;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--special-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-light-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 5px;
+  border: none;
+  background-color: var(--basic-light-grey);
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .filter-list {
   list-style-type: none;
   margin: 0;
+  margin-top: 32px;
   padding: 0;
+}
+
+.filter-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label {
+  margin-bottom: 20px;
+  margin-left: 42px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/checkbox.svg);
 }
 
 .filter-button {

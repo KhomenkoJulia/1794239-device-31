@@ -105,44 +105,58 @@
           oninput="priceoutput.value=pricecount.value">
           <fieldset class="filter-fieldset">
             <legend>Стоимость</legend>
-            <p>
-              <input type="range" name="price" min="0" max="8000" step="100">
-              <output name="sum">[от 0 до 5000]</output>
-            </p>
-            <p>
-              <input type="range" name="price" min="0" max="8000" step="100">
-              <output name="sum">[от 1000 до 8000]</output>
-            </p>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                            width: 50%;
+                            margin-left: 0;">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0;">
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 50%;">
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="5000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-fieldset">
             <legend>Цвет</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <input id="filter-black" class="filter-input" type="checkbox" name="color" value="black" checked>
+                <input id="filter-black" class="filter-input-checkbox visually-hidden" type="checkbox" name="color" value="black" checked>
                 <label for="filter-black">
                   Черный
                 </label>
               </li>
               <li class="filter-item">
-                <input id="filter-white" class="filter-input" type="checkbox" name="color" value="white">
+                <input id="filter-white" class="filter-input-checkbox visually-hidden" type="checkbox" name="color" value="white">
                 <label for="filter-white">
                   Белый
                 </label>
               </li>
               <li class="filter-item">
-                <input id="filter-blue" class="filter-input" type="checkbox" name="color" value="blue" checked>
+                <input id="filter-blue" class="filter-input-checkbox visually-hidden" type="checkbox" name="color" value="blue" checked>
                 <label for="filter-blue">
                   Синий
                 </label>
               </li>
               <li class="filter-item">
-                <input id="filter-red" class="filter-input" type="checkbox" name="color" value="red" checked>
+                <input id="filter-red" class="filter-input-checkbox visually-hidden" type="checkbox" name="color" value="red" checked>
                 <label for="filter-red">
                   Красный
                 </label>
               </li>
               <li class="filter-item">
-                <input id="filter-pink" class="filter-input" type="checkbox" name="color" value="rose">
+                <input id="filter-pink" class="filter-input-checkbox visually-hidden" type="checkbox" name="color" value="rose">
                 <label for="filter-pink">
                   Розовый
                 </label>
@@ -152,11 +166,11 @@
           <fieldset class="filter-fieldset">
             <legend>Bluetooth</legend>
             <p class="filter-p">
-              <input id="bluetooth-true" type="radio" name="bluetooth" value="Есть" checked>
+              <input id="bluetooth-true" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Есть" checked>
               <label for="bluetooth-true">Есть</label>
             </p>
             <p class="filter-p">
-              <input id="bluetooth-false" type="radio" name="bluetooth" value="Нет">
+              <input id="bluetooth-false" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Нет">
               <label for="bluetooth-false">Нет</label>
             </p>
           </fieldset>
