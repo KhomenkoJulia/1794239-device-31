@@ -128,12 +128,24 @@ img {
   margin-top: -15px;
   margin-right: 100px;
   padding: 0;
-  width: 440px;
   display: flex;
+  position: relative;
+}
+
+label[for="search-input"] {
+  display: flex;
+  background-image: url(../img/icons/icon_search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 11px;
+  width: 20px;
+  height: 40px;
 }
 
 .search-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   width: 84px;
@@ -145,29 +157,30 @@ img {
   opacity: 0;
 }
 
+.search-button::before {
+  content: "";
+  width: 440px;
+  height: 2px;
+  background-color: var(--basic-black);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .search-input {
   border: none;
   outline: none;
   background: var(--special-opacity);
   opacity: 0.3;
-  width: 200px;
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   height: 40px;
+  width: 322px;
 }
 
 .search-input:hover {
   opacity: 0.6;
   outline: none;
-}
-
-.search-input + label::before {
-  content: "Поиск по сайту";
-  background-image: url(../img/icons/icon_search.svg);
-  background-repeat: no-repeat;
-  margin-right: 11px;
-  width: 13px;
-  height: 14px;
 }
 
 .search-input:focus ~ .search-button {
