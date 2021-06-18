@@ -1311,10 +1311,10 @@ h2 {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
 }
 
-.filter-input-checkbox + label {
+.filter-input-checkbox + label,
+.filter-input-radio + label {
   margin-bottom: 20px;
   margin-left: 42px;
 }
@@ -1326,7 +1326,7 @@ h2 {
   top: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #000000;
+  border: 2px solid var(--basic-black);
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1337,6 +1337,28 @@ h2 {
   width: 12px;
   height: 12px;
   background-image: url(../img/checkbox.svg);
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-black);
+  border-radius: 50%;
 }
 
 .filter-button {
@@ -1366,9 +1388,27 @@ h2 {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-right: 5px;
+  column-gap: 16px;
+}
+
+.sort-link-min,
+.sort-link-max {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.sort-link-min {
+  border-bottom: 10px solid var(--basic-black);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.sort-link-max {
+  border-top: 10px solid var(--basic-black);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: 0;
 }
 
 .sort-link-arrow:hover {

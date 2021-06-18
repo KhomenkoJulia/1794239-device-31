@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юлия Хоменко](https://up.htmlacademy.ru/htmlcss/31/user/1794239).
-* Наставник: [Ирина Фролова](https://github.com/crazywoolf).
+* Наставник: [Сергей Артёмов](https://github.com/firefoxic).
 
 ---
 

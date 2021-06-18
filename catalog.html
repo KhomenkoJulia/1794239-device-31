@@ -23,8 +23,8 @@
     <nav class="nav-menu">
       <div class="nav-menu-top">
         <form class="search-form" action="#" method="get">
-          <label for="search-input">Поиск по сайту</label>
-          <input class="search-input" id="search-input" type="text" name="search">
+          <label for="search-input"><span class="visually-hidden">Поиск</span></label>
+          <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="profile-list">
@@ -165,14 +165,16 @@
           </fieldset>
           <fieldset class="filter-fieldset">
             <legend>Bluetooth</legend>
-            <p class="filter-p">
-              <input id="bluetooth-true" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Есть" checked>
-              <label for="bluetooth-true">Есть</label>
-            </p>
-            <p class="filter-p">
-              <input id="bluetooth-false" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Нет">
-              <label for="bluetooth-false">Нет</label>
-            </p>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input id="bluetooth-true" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Есть" checked>
+                <label for="bluetooth-true">Есть</label>
+              </li>
+              <li class="filter-item">
+                <input id="bluetooth-false" class="filter-input-radio visually-hidden" type="radio" name="bluetooth" value="Нет">
+                <label for="bluetooth-false">Нет</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="filter-button link-details" type="submit">Показать</button>
         </form>
@@ -191,13 +193,13 @@
           </ul>
           <ul class="sort-direction-list">
             <li class=" sort-item">
-              <a class="sort-link sort-link-arrow" href="#">
-                Min
+              <a class="sort-link sort-link-min" href="#">
+                <span class="visually-hidden">Min</span>
               </a>
             </li>
             <li class="sort-item">
-              <a class="sort-link sort-link-arrow sort-link-active" href="#">
-                Max
+              <a class="sort-link sort-link-max sort-link-active" href="#">
+                <span class="visually-hidden">Max</span>
               </a>
             </li>
           </ul>
