@@ -80,21 +80,64 @@
     <h1 class="visually-hidden">Магазин Device</h1>
     <section class="slider container">
       <div class="pagination">
-        <a class="pagination-link pagination-link1" href="#slide1">
-          Слайд 1
-        </a>
-        <a class="pagination-link pagination-link2" href="#slide2">
-          Слайд 2
-        </a>
-        <a class="pagination-link pagination-link3" href="#slide3">
-          Слайд 3
-        </a>
+        <a class="pagination-link pagination-link-active pagination-link1" href="#slide1" aria-label="Первый слайд"></a>
+        <a class="pagination-link pagination-link2" href="#slide2" aria-label="Второй слайд"></a>
+        <a class="pagination-link pagination-link3" href="#slide3" aria-label="Третий слайд"></a>
       </div>
       <h2 class="visually-hidden">Хиты продаж!</h2>
       <div class="slider-inner">
 
         <ol class="slider-list">
           <li id="slide1" class="slide-item slide1">
+            <div class="slide-right">
+              <div class="slider-wrap">
+                <h4 class="slider-title">Порхает как бабочка, жалит как пчела!</h4>
+                <p class="slider-text">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <p class="slider-button">
+                  <a class="slider-link link-details" href="catalog.html">Подробнее</a>
+                </p>
+                <div class="properties-container">
+                  <dl class="properties">
+                    <dt>Дальность полета</dt>
+                    <dd>800 м</dd>
+                  </dl>
+                  <dl class="properties">
+                    <dt>Радиус поражения</dt>
+                    <dd>50 м</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="slide-left">
+              <img class="slide-img" src="img/slider/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            </div>
+          </li>
+          <li id="slide2" class="slide-item slide2">
+            <div class="slide-right">
+              <div class="slider-wrap">
+                <h4 class="slider-title">Худеем<br>правильно!</h4>
+                <p class="slider-text">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и
+                  соблюдать диету.
+                </p>
+                <p class="slider-button">
+                  <a class="slider-link link-details" href="catalog.html">Подробнее</a>
+                </p>
+                <div class="properties-container">
+                  <dl class="properties">
+                    <dt>Без подзарядки</dt>
+                    <dd>48 часов</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="slide-left">
+              <img class="slide-img" src="img/slider/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+            </div>
+          </li>
+          <li id="slide3" class="slide-item slide3">
             <div class="slide-right">
               <div class="slider-wrap">
                 <h4 class="slider-title">Делай селфи,<br> как Бен Стиллер!</h4>
@@ -123,56 +166,6 @@
             </div>
             <div class="slide-left">
               <img class="slide-img" src="img/slider/slider-1.png" alt="Палка для селфи" width="384" height="486">
-            </div>
-          </li>
-          <li id="slide2" class="slide-item slide2">
-            <div class="slide-right">
-              <div class="slider-wrap">
-                <h4 class="slider-title">Худеем<br>правильно!</h4>
-                <p class="slider-text">
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-                  соблюдать диету.
-                </p>
-                <p class="slider-button">
-                  <a class="slider-link link-details" href="catalog.html">Подробнее</a>
-                </p>
-                <div class="properties-container">
-                  <dl class="properties">
-                    <dt>Без подзарядки</dt>
-                    <dd>48 часов</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-            <div class="slide-left">
-              <img class="slide-img" src="img/slider/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
-            </div>
-          </li>
-          <li id="slide3" class="slide-item slide3">
-            <div class="slide-right">
-              <div class="slider-wrap">
-                <h4 class="slider-title">Порхает как бабочка, жалит как пчела!</h4>
-                <p class="slider-text">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-                  камеру.
-                </p>
-                <p class="slider-button">
-                  <a class="slider-link link-details" href="catalog.html">Подробнее</a>
-                </p>
-                <div class="properties-container">
-                  <dl class="properties">
-                    <dt>Дальность полета</dt>
-                    <dd>800 м</dd>
-                  </dl>
-                  <dl class="properties">
-                    <dt>Радиус поражения</dt>
-                    <dd>50 м</dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-            <div class="slide-left">
-              <img class="slide-img" src="img/slider/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             </div>
           </li>
         </ol>
@@ -204,35 +197,35 @@
     <section class="advantages">
       <h2 class="visually-hidden">Сервисы и услуги</h2>
       <div class="advantages-container container">
-        <div class="advantage-links advantage-rect">
+        <div class="advantage-pagination advantage-rect">
           <a class="advantage-link advantage-link-active" href="#delivery">
-            <div class="advantage-link-container">Доставка</div>
+            <span class="advantage-link-content">Доставка</span>
           </a>
           <a class="advantage-link" href="#warranty">
-            <div class="advantage-link-container">Гарантия</div>
+            <span class="advantage-link-content">Гарантия</span>
           </a>
           <a class="advantage-link" href="#credit">
-            <div class="advantage-link-container">Кредит</div>
+            <span class="advantage-link-content">Кредит</span>
           </a>
         </div>
         <div class="advantage-services">
           <ul class="advantage-list">
-            <li class="advantage advantage-delivery" id="delivery">
-              <h2>Доставка</h2>
+            <li class="advantage-item advantage-delivery" id="delivery">
+              <h2 class="advantage-title">Доставка</h2>
               <p class="advantage-text">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.
               </p>
             </li>
-            <li class="advantage advantage-warranty" id="warranty">
-              <h2>Гарантия</h2>
+            <li class="advantage-item advantage-warranty" id="warranty">
+              <h2 class="advantage-title">Гарантия</h2>
               <p class="advantage-text">
                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="advantage advantage-credit" id="credit">
-              <h2>Кредит</h2>
+            <li class="advantage-item advantage-credit" id="credit">
+              <h2 class="advantage-title">Кредит</h2>
               <p class="advantage-text">
                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные для нашего банка, разумеется.
@@ -258,14 +251,13 @@
       </a>
     </section>
     <section class="information container">
-      <div class="info rectangle-black" id="about">
-        <h2>О нас</h2>
+      <div class="info info-left rectangle-black" id="about">
+        <h2 class="info-title">О нас</h2>
         <p class="info-text">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
         </p>
-        <p class="info-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-          компаниями:
+        <p class="info-text-delivery">
+          Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:
         </p>
         <ul class="info-list">
           <li class="info-item">Деловые линии</li>
@@ -276,11 +268,10 @@
           <a class="info-details link-details" href="blank.html">Подробнее о нас</a>
         </p>
       </div>
-      <div class="info rectangle-black" id="contacts">
-        <h2>Контакты</h2>
-        <p class="info-text">
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-          Всякое бывает.
+      <div class="info info-right rectangle-black" id="contacts">
+        <h2 class="info-title">Контакты</h2>
+        <p class="info-text-contacts">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <!-- карта в модальном окне -->
         <a class="map-link"
