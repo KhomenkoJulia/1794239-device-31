@@ -322,8 +322,9 @@ label[for="search-input"] {
   padding-bottom: 46px;
   position: absolute;
   display: grid;
-  width: 1320px;
-  left: -80px;
+  width: 1160px;
+  left: -60px;
+  top: 48px;
   z-index: 3;
   box-sizing: border-box;
   background: var(--basic-light-yellow);
@@ -804,28 +805,25 @@ h2 {
 .information {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
+  row-gap: 100px;
+  margin-bottom: 62px;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 50%;
+  min-height: 580px;
 }
 
 .info-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 52px 0 42px;
 }
 
 .information p {
   line-height: 28px;
-  max-width: 450px;
 }
 
-.info-text-delivery {
-  outline: 1px solid red;
-  margin: 25px 0 60px;
+.info p:first-of-type {
+  margin: 40px 0;
 }
 
 .rectangle-black::before {
@@ -834,13 +832,13 @@ h2 {
   width: 80px;
   height: 7px;
   background: var(--basic-black);
-  margin-bottom: 50px;
 }
 
 .info-list {
   list-style-type: none;
-  margin: 60px 0 0 0;
-  padding: 0 0 0 20px;
+  margin: 60px 0;
+  padding: 0;
+  padding-left: 20px;
 }
 
 .info-item {
@@ -849,17 +847,25 @@ h2 {
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 14px;
+  padding-left: 13px;
 }
 
 .info-form-link {
   width: 260px;
-  margin-top: 85px;
+  margin-top: 76px;
 }
 
 .info-details {
   width: 260px;
-  margin-top: 84px;
+  margin-top: 70px;
 }
+
+.info-right {
+  padding-left: 40px;
+}
+
+/* -------footer------- */
 
 .footer-main {
   background: var(--basic-extra-dark);
@@ -873,7 +879,7 @@ h2 {
 .footer-navigation {
   display: flex;
   justify-content: flex-end;
-  column-gap: 40px;
+  column-gap: 36px;
 }
 
 .footer-action-list {
@@ -891,7 +897,6 @@ h2 {
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  flex-grow: 1;
   flex-wrap: wrap;
 }
 
@@ -909,7 +914,7 @@ h2 {
 
 .footer-name-user::before {
   content: "";
-  background-image: url(../img/icons/icon_user_y.svg);
+  background-image: url(../img/icons/icon_user_g.svg);
   background-repeat: no-repeat;
   margin-right: 11px;
   width: 13px;
@@ -942,6 +947,10 @@ h2 {
   opacity: 3;
 }
 
+.footer-logo-link {
+  display: block;
+}
+
 .footer-logo-link:hover {
   opacity: 0.6;
 }
@@ -952,8 +961,11 @@ h2 {
 
 .footer-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+}
+
+.footer-left {
+  margin-right: 146px;
 }
 
 .footer-text {
@@ -962,13 +974,17 @@ h2 {
   line-height: 20px;
 }
 
+.footer-center {
+  margin-right: 200px;
+}
+
 .footer-nav-list {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
   column-gap: 36px;
-  margin: 72px auto 67px;
+  margin: 76px 0 67px;
 }
 
 .footer-nav-link {
@@ -1017,6 +1033,7 @@ h2 {
 
 .social-link {
   opacity: 0.3;
+  display: flex;
 }
 
 .social-link:hover {
@@ -1031,7 +1048,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 33px;
+  padding-top: 36px;
 }
 
 .tel-link {
@@ -1056,7 +1073,7 @@ h2 {
   width: 80px;
   height: 7px;
   background: var(--basic-yellow);
-  margin-top: 50px;
+  margin-top: 62px;
 }
 
 .modal-letter {
@@ -1188,7 +1205,8 @@ h2 {
   color: var(--basic-white);
 }
 
-/*каталог*/
+/*--------------каталог---------------*/
+
 .main-catalog {
   font-size: 14px;
 }
