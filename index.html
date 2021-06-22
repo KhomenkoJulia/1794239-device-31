@@ -22,7 +22,7 @@
       <div class="nav-menu-top">
         <form class="search-form" action="#" method="get">
           <label for="search-input"><span class="visually-hidden">Поиск</span></label>
-          <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту">
+          <input class="search-input" id="search-input" type="text" name="search" placeholder="Поиск по сайту" required>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="profile-list">
@@ -349,41 +349,42 @@
     </div>
   </footer>
 
-  <!--
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+      width="766" height="560" allowfullscreen
+      title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+    </iframe>
+    <p>
+      <button class="modal-close" type="button"></button>
+    </p>
+  </section>
 
-        <p>
-          <button class="modal-close" type="button"></button>
-        </p>
-      </section>
+  <section class="modal modal-letter">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <p>
+      <button class="modal-close" type="button"></button>
+    </p>
+    <form action="#" method="post" class="letter-form">
+      <p>
+        <label for="name-input">Ваше имя:</label>
+        <input class="letter-input" id="name-input" type="text" name="name" placeholder="Имя Фамилия" autofocus>
+      </p>
+      <p>
+        <label for="email-input">Ваш e-mail:</label>
+        <input class="letter-input" id="email-input" type="email" name="e-mail" placeholder="email@example.com" tabindex="2">
+      </p>
+      <p>
+        <label for="yourmessage">Текст письма:</label>
+        <textarea class="letter-textarea" id="yourmessage" name="message" rows=5 tabindex="3" placeholder="В свободной форме"></textarea>
+      </p>
 
+      <button type="submit" class="letter-button link-details">Отправить</button>
+    </form>
+  </section>
 
-      <section class="modal modal-letter">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <p>
-          <button class="modal-close" type="button"></button>
-        </p>
-        <form action="#" method="post" class="letter-form">
-          <p>
-            <label for="name-input">Ваше имя:</label>
-            <input class="letter-input" id="name-input" type="text" name="name" placeholder="Имя Фамилия" autofocus>
-          </p>
-          <p>
-            <label for="email-input">Ваш e-mail:</label>
-            <input class="letter-input" id="email-input" type="email" name="e-mail" placeholder="email@example.com" tabindex="2">
-          </p>
-          <p>
-            <label for="yourmessage">Текст письма:</label>
-            <textarea class="letter-textarea" id="yourmessage" name="message" rows=5 tabindex="3">В свободной форме</textarea>
-          </p>
-
-          <button type="submit" class="letter-button link-details">Отправить</button>
-        </form>
-      </section>
--->
-
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
