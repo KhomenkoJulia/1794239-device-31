@@ -1083,42 +1083,37 @@ h2 {
 /* ---------modal--------- */
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   background-color: var(--basic-white);
   z-index: 5;
-  padding: 20px 20px 70px 100px;
   box-sizing: border-box;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  max-width: 960px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .modal-map {
-  width: 766px;
   height: 560px;
-  border: 7px solid white;
-}
-
-.modal-map img {
-  display: block;
 }
 
 .modal-map iframe {
   border: none;
+  margin-top: -85px;
+}
+
+.modal-close-map {
+  margin-right: 20px;
 }
 
 .modal-letter {
-  display: none;
-  top: 120px;
-  bottom: auto;
-  width: 960px;
   min-height: 550px;
   background: var(--basic-white);
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
-  margin: 0 auto;
+  padding: 20px 20px 70px 100px;
 }
 
 .modal p:first-of-type {
