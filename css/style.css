@@ -277,7 +277,7 @@ label[for="search-input"] {
 }
 
 .nav-item:first-child {
-  flex-grow: 1;
+  margin-right: 250px;
 }
 
 .nav-item:nth-child(3) {
@@ -303,14 +303,20 @@ label[for="search-input"] {
 }
 
 .nav-catalog-link {
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.top-menu {
+  outline: 1px solid red;
 }
 
 .top-menu:hover .submenu-list {
   opacity: 1;
+  visibility: visible;
 }
 
-.top-menu::after {
+.nav-catalog-link::after {
   content: "+";
   font-size: 30px;
   font-weight: 400;
@@ -339,7 +345,9 @@ label[for="search-input"] {
   row-gap: 20px;
   grid-template-columns: max-content max-content max-content;
   grid-template-rows: min-content min-content min-content;
+  transition: 0.5s ease-in-out;
   opacity: 0;
+  visibility: hidden;
 }
 
 .item-a {
@@ -1568,13 +1576,11 @@ h2 {
 }
 
 .card-item {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  place-items: center;
   width: 360px;
-  height: 460px;
-  font-size: 50px;
-  font-weight: 700;
+  min-height: 460px;
 }
 
 .card-wrap {
@@ -1582,7 +1588,8 @@ h2 {
   order: -1;
 }
 
-.card-wrap:hover .card-action {
+.card-wrap:hover .card-action,
+.card-wrap:focus-within .card-action {
   opacity: 1;
 }
 
@@ -1658,11 +1665,11 @@ h2 {
 }
 
 .card-link {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
 
 .card-title {
@@ -1670,7 +1677,7 @@ h2 {
   font-size: 18px;
   line-height: 22px;
   margin: 0;
-  padding: 0;
+  max-width: 260px;
 }
 
 .card-price {
