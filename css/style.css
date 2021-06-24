@@ -1662,7 +1662,7 @@ h2 {
   grid-template-columns: 1fr auto;
   padding-top: 30px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .card-title {
