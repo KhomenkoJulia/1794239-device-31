@@ -8,7 +8,6 @@ const letterForm = modalLetter.querySelector(".letter-form");
 const nameInput = modalLetter.querySelector(".letter-input-name");
 const emailInput = modalLetter.querySelector(".letter-input-email");
 
-const paginationList = document.querySelectorAll('.pagination-link');
 const linkHref = [
   '#slide1',
   '#slide2',
@@ -79,10 +78,33 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+const slides = document.querySelectorAll('.slide-item');
+const dots = document.querySelectorAll('.pagination-link');
+const buttonsMore = document.querySelectorAll('.slider-link');
+let slideIndex = 1;
+showSlides(slideIndex);
 
-paginationList.forEach((item, index)=>{
-  item.addEventListener('click', () => {
-    item.href = linkHref[index];
-    item.classList.toggle('pagination-link-active');
-  });
-});
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].href = linkHref[i];
+    buttonsMore[i].style.display = 'none';
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" pagination-link-active", "");
+    };
+  buttonsMore[slideIndex-1].style.display = 'flex';
+  dots[slideIndex - 1].className += " pagination-link-active";
+};
