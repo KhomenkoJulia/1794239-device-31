@@ -25,8 +25,8 @@ try {
 }
 
 letterButton.addEventListener('click', (evt) => {
-	evt.preventDefault();
-	modalLetter.style.display = 'block';
+  evt.preventDefault();
+  modalLetter.style.display = 'block';
   modalLetter.style.animation = 'bounce 600ms';
   if (storage) {
     nameInput.value = storage;
@@ -37,17 +37,17 @@ letterButton.addEventListener('click', (evt) => {
 });
 
 mapButton.addEventListener('click', (evt) => {
-	evt.preventDefault();
-	modalMap.style.display = 'block';
+  evt.preventDefault();
+  modalMap.style.display = 'block';
 });
 
 modalCloseButton.forEach((item => {
-	item.addEventListener('click', (evt) => {
-		evt.preventDefault();
+  item.addEventListener('click', (evt) => {
+    evt.preventDefault();
     modalLetter.style.display = 'none';
     modalMap.style.display = 'none';
     modalLetter.classList.remove('modal-error');
-	});
+  });
 }));
 
 letterForm.addEventListener("submit", function (evt) {

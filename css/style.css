@@ -1111,20 +1111,17 @@ h2 {
   background-color: var(--basic-white);
   z-index: 5;
   box-sizing: border-box;
-  top: 120px;
   left: 0;
   right: 0;
-  bottom: auto;
+  top: 0;
+  bottom: 0;
   max-width: 960px;
+  height: 560px;
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .modal-error {
   animation: shake 0.6s;
-}
-
-.modal-map {
-  height: 560px;
 }
 
 .modal-map iframe {
