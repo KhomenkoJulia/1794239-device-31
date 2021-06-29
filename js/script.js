@@ -4,9 +4,9 @@ const letterButton = document.querySelector('.info-form-link');
 const mapButton = document.querySelector('.map-link');
 
 const modalCloseButton = document.querySelectorAll('.modal-close');
-const letterForm = modalLetter.querySelector(".letter-form");
-const nameInput = modalLetter.querySelector(".letter-input-name");
-const emailInput = modalLetter.querySelector(".letter-input-email");
+const letterForm = modalLetter.querySelector('.letter-form');
+const nameInput = modalLetter.querySelector('.letter-input-name');
+const emailInput = modalLetter.querySelector('.letter-input-email');
 
 const linkHref = [
   '#slide1',
@@ -18,7 +18,7 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem('name');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -26,7 +26,7 @@ try {
 letterButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modalLetter.style.display = 'block';
-  modalLetter.style.animation = 'bounce 600ms';
+  modalLetter.classList.add('modal-show');
   if (storage) {
     nameInput.value = storage;
     emailInput.focus();
@@ -38,6 +38,7 @@ letterButton.addEventListener('click', (evt) => {
 mapButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modalMap.style.display = 'block';
+  modalMap.classList.add('modal-show');
 });
 
 modalCloseButton.forEach((item => {
@@ -49,7 +50,7 @@ modalCloseButton.forEach((item => {
   });
 }));
 
-letterForm.addEventListener("submit", function (evt) {
+letterForm.addEventListener('submit', function (evt) {
   if (!nameInput.value || !emailInput.value) {
     evt.preventDefault();
     modalLetter.classList.remove('modal-error');
@@ -60,7 +61,7 @@ letterForm.addEventListener("submit", function (evt) {
 }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape') {
     if (modalLetter.style.display = 'block') {
       evt.preventDefault();
@@ -70,7 +71,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape') {
     if (modalMap.style.display = 'block') {
       evt.preventDefault();
@@ -81,30 +82,77 @@ window.addEventListener("keydown", function (evt) {
 const slides = document.querySelectorAll('.slide-item');
 const dots = document.querySelectorAll('.pagination-link');
 const buttonsMore = document.querySelectorAll('.slider-link');
-let slideIndex = 1;
-showSlides(slideIndex);
+const dotsBlock = document.querySelector('.pagination');
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+const serviceSlides = document.querySelectorAll('.advantage-item');
+const links = document.querySelectorAll('.advantage-link');
+const linksBlock = document.querySelector('.advantage-pagination');
+
+
+const slideIndexes = {
+  'Первый слайд': 1,
+  'Второй слайд': 2,
+  'Третий слайд': 3,
 }
 
-function showSlides(n) {
+const serviceSlideIndexes = {
+  'Доставка' : 1,
+  'Гарантия': 2,
+  'Кредит': 3,
+}
 
-  if (n > slides.length) {
+function showSlides(slideIndex) {
+
+  if (slideIndex > slides.length) {
     slideIndex = 1
   }
-  if (n < 1) {
+  if (slideIndex < 1) {
     slideIndex = slides.length;
   }
 
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].href = linkHref[i];
     buttonsMore[i].style.display = 'none';
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" pagination-link-active", "");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('pagination-link-active');
     };
   buttonsMore[slideIndex-1].style.display = 'flex';
-  dots[slideIndex - 1].className += " pagination-link-active";
+  dots[slideIndex - 1].classList.add('pagination-link-active');
 };
+
+function showServiceSlides(serviceSlideIndex) {
+
+  if (serviceSlideIndex > serviceSlides.length) {
+    serviceSlideIndex = 1
+  }
+  if (serviceSlideIndex < 1) {
+    serviceSlideIndex = serviceSlides.length;
+  }
+
+  for (let i = 0; i < serviceSlides.length; i++) {
+    serviceSlides[i].href = linkHref[i];
+
+  }
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].classList.remove('advantage-link-active');
+  };
+  links[serviceSlideIndex - 1].classList.add('advantage-link-active');
+  console.log('работает');
+};
+
+dotsBlock.addEventListener('click',(evt) => {
+  if (evt.target.matches('.pagination-link')){
+    showSlides(slideIndexes[evt.target.ariaLabel]);
+  }
+  });
+
+linksBlock.addEventListener('click', (evt) => {
+  if (evt.target.matches('.advantage-link-content')) {
+    showServiceSlides(serviceSlideIndexes[evt.target.textContent]);
+  }
+});
+showSlides(1);
+showServiceSlides(1);

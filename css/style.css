@@ -1121,7 +1121,13 @@ h2 {
 }
 
 .modal-error {
+  display: block;
   animation: shake 0.6s;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-map iframe {
@@ -1216,6 +1222,7 @@ h2 {
   padding: 20px;
   box-sizing: border-box;
   border: 2px solid var(--special-opacity);
+  resize: none;
 }
 
 .letter-textarea::placeholder,
