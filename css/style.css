@@ -322,7 +322,7 @@ label[for="search-input"] {
 }
 
 .nav-item:first-child {
-  margin-right: 250px;
+  margin-right: 280px;
 }
 
 .nav-item:nth-child(3) {
@@ -462,18 +462,26 @@ label[for="search-input"] {
   padding: 0;
   width: 300%;
   transition: transform 0.8s ease;
-  display: flex;
+  display: grid;
   counter-reset: list-counter;
 }
 
 .slide-item {
+  grid-area: 1 / 1 / -1 / -1;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   width: 1160px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  visibility: hidden;
+  background-image: linear-gradient(var(--basic-light-yellow) 155px, var(--basic-white) 155px);
   counter-increment: list-counter;
+}
+
+.slide-item:target,
+.slide-item-current {
+  visibility: visible;
 }
 
 .slide-item::before {
@@ -709,6 +717,7 @@ label[for="search-input"] {
 }
 
 .advantage-list {
+  display: grid;
   height: 300%;
   list-style-type: none;
   margin: 0;
@@ -716,8 +725,15 @@ label[for="search-input"] {
 }
 
 .advantage-item {
+  grid-area: 1 / 1 / -1 / -1;
+  visibility: hidden;
   padding: 72px 116px;
   min-height: 400px;
+}
+
+.advantage-item:target,
+.advantage-item.slide-item-current {
+  visibility: visible;
 }
 
 .advantage-title {
@@ -739,7 +755,9 @@ label[for="search-input"] {
 
 .advantage-link {
   width: 280px;
-  display: block;
+  height: 40px;
+  display: flex;
+  align-items: center;
   margin-bottom: 22px;
 }
 
@@ -763,13 +781,13 @@ label[for="search-input"] {
 }
 
 .advantage-link:active .advantage-link-content,
-.advantage-link-active .advantage-link-content {
+.pagination-link-active .advantage-link-content {
   background: var(--basic-black);
   color: var(--basic-light-yellow);
 }
 
 .advantage-link:active,
-.advantage-link-active {
+.advantage-link.pagination-link-active {
   background: var(--basic-black);
   color: var(--basic-light-yellow);
 }
@@ -1325,7 +1343,7 @@ h2 {
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   margin: 0 14px;
 }
 
