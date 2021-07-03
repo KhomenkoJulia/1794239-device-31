@@ -1349,7 +1349,6 @@ h2 {
   display: inline-block;
   padding: 3px;
   transform: rotate(-45deg);
-  transform: rotate(-45deg);
   margin: 0 14px;
 }
 
@@ -1527,7 +1526,7 @@ h2 {
   background: url(../img/filter/checkbox-checked.svg) no-repeat;
 }
 
-.filter-input-checkbox:focus + label::after {
+.filter-input-checkbox:focus-visible + label::after {
   content: "";
   position: absolute;
   left: -42px;
@@ -1537,6 +1536,7 @@ h2 {
   background-color: transparent;
   outline: 2px solid currentColor;
   outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .filter-fieldset-bluetooth {
@@ -1558,7 +1558,7 @@ h2 {
   background: url(../img/filter/radio-checked.svg) no-repeat;
 }
 
-.filter-input-radio:focus + label::after {
+.filter-input-radio:focus-visible + label::after {
   content: "";
   position: absolute;
   left: -42px;
@@ -1568,6 +1568,7 @@ h2 {
   background-color: transparent;
   outline: 2px solid currentColor;
   outline-offset: 2px;
+  border-radius: 12px;
 }
 
 .filter-button {
