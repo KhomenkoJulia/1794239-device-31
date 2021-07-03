@@ -445,7 +445,7 @@ label[for="search-input"] {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  display: inline-block;
+  display: flex;
 }
 
 .nav-link:hover {
@@ -1703,6 +1703,7 @@ h2 {
   border: solid var(--basic-black);
   border-width: 0 1px 1px 0;
   display: inline-block;
+  vertical-align: baseline;
   padding: 3px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
