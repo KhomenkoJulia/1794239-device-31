@@ -216,9 +216,13 @@ label[for="search-input"] {
   width: 318px;
 }
 
-.search-input:hover,
-.search-input:focus-within {
+.search-input:hover {
   opacity: 0.6;
+  outline: none;
+}
+
+.search-input:focus-within {
+  opacity: 1;
   outline: none;
 }
 
@@ -229,15 +233,14 @@ label[for="search-input"] {
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   width: 82px;
-  height: 40px;
+  height: 42px;
   border: 2px solid var(--basic-black);
-  border-bottom: none;
   background: transparent;
   text-transform: uppercase;
 }
 
-.search-button:hover,
-.search-button:focus-within {
+.search-input:valid ~ .search-button:hover,
+.search-input:valid ~ .search-button:focus-within {
   color: var(--basic-white);
   background-color: var(--basic-black);
 }
