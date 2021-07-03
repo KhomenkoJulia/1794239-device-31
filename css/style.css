@@ -426,7 +426,7 @@ label[for="search-input"] {
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -1035,7 +1035,9 @@ label[for="search-input"] {
   background-position: right 86px;
 }
 
-h2 {
+.filter-title,
+.advantage-title,
+.info-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
